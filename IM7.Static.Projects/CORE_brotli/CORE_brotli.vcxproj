@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_brotli</ProjectName>
+    <ProjectGuid>{A9E76CE7-CCB2-DB27-A9E7-6CE7CCB2DB27}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Artifacts\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CORE_DB_brotli_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CORE_RL_brotli_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\x64\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\x64\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_DB_brotli_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_RL_brotli_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\brotli\c\common\constants.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\common\context.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\common\dictionary.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\common\platform.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\common\shared_dictionary.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\common\transform.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\dec\bit_reader.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\dec\decode.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\dec\huffman.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\dec\state.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\backward_references.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\backward_references_hq.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\bit_cost.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\block_splitter.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\brotli_bit_stream.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\cluster.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\command.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\compound_dictionary.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\compress_fragment.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\compress_fragment_two_pass.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\dictionary_hash.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\encode.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\encoder_dict.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\entropy_encode.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\fast_log.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\histogram.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\literal_cost.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\memory.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\metablock.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\static_dict.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\brotli\c\enc\utf8_util.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Dependencies\brotli\c\common\constants.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\common\context.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\common\dictionary.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\common\platform.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\common\shared_dictionary_internal.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\common\transform.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\common\version.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\dec\bit_reader.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\dec\huffman.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\dec\prefix.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\dec\state.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\backward_references.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\backward_references_hq.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\backward_references_inc.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\bit_cost.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\bit_cost_inc.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\block_encoder_inc.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\block_splitter.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\block_splitter_inc.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\brotli_bit_stream.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\cluster.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\cluster_inc.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\command.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\compound_dictionary.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\compress_fragment.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\compress_fragment_two_pass.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\dictionary_hash.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\encoder_dict.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\entropy_encode.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\entropy_encode_static.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\fast_log.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\find_match_length.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\hash.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\hash_composite_inc.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\hash_forgetful_chain_inc.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\hash_longest_match64_inc.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\hash_longest_match_inc.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\hash_longest_match_quickly_inc.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\hash_rolling_inc.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\hash_to_binary_tree_inc.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\histogram.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\histogram_inc.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\literal_cost.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\memory.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\metablock.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\metablock_inc.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\params.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\prefix.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\quality.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\ringbuffer.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\state.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\static_dict.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\static_dict_lut.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\utf8_util.h" />
+    <ClInclude Include="..\..\Dependencies\brotli\c\enc\write_bits.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

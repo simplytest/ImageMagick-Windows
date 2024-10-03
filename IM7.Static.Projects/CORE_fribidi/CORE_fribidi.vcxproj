@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_fribidi</ProjectName>
+    <ProjectGuid>{F9197596-3C49-0884-F919-75963C490884}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Artifacts\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CORE_DB_fribidi_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CORE_RL_fribidi_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\x64\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\x64\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_DB_fribidi_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\fribidi\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;DONT_HAVE_FRIBIDI_CONFIG_H;FRIBIDI_NO_DEPRECATED;HAVE_MEMORY_H;HAVE_MEMSET;HAVE_STRINGIZE;HAVE_STDLIB_H;HAVE_STRDUP;HAVE_STRING_H;HAVE_WCHAR_H;FRIBIDI_LIB_STATIC;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_RL_fribidi_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\fribidi\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;DONT_HAVE_FRIBIDI_CONFIG_H;FRIBIDI_NO_DEPRECATED;HAVE_MEMORY_H;HAVE_MEMSET;HAVE_STRINGIZE;HAVE_STDLIB_H;HAVE_STRDUP;HAVE_STRING_H;HAVE_WCHAR_H;FRIBIDI_LIB_STATIC;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-arabic.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-bidi-types.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-bidi.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-brackets.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-char-sets-cap-rtl.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-char-sets-cp1255.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-char-sets-cp1256.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-char-sets-iso8859-6.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-char-sets-iso8859-8.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-char-sets-utf8.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-char-sets.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-deprecated.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-joining-types.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-joining.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-mirroring.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-run.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi-shape.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\fribidi\lib\fribidi.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\bidi-types.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\common.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\debug.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-arabic.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-begindecls.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-bidi-types-list.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-bidi-types.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-bidi.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-brackets.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-char-sets-cap-rtl.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-char-sets-cp1255.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-char-sets-cp1256.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-char-sets-iso8859-6.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-char-sets-iso8859-8.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-char-sets-list.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-char-sets-utf8.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-char-sets.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-common.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-config.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-deprecated.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-enddecls.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-flags.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-joining-types-list.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-joining-types.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-joining.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-mirroring.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-shape.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-types.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-unicode-version.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi-unicode.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\fribidi.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\joining-types.h" />
+    <ClInclude Include="..\..\Dependencies\fribidi\lib\run.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Dependencies\fribidi\.ImageMagick\ImageMagick.rc" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

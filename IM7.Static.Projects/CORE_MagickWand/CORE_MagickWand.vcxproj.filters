@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\animate.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\compare.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\composite.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\conjure.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\deprecate.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\display.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\drawing-wand.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\identify.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\import.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\magick-cli.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\magick-image.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\magick-property.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\magick-wand.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\mogrify.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\montage.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\operation.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\pixel-iterator.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\pixel-wand.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\script-token.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\stream.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\wand-view.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\wand.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickWand\wandcli.c">
+      <Filter>MagickWand</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\animate.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\compare.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\composite.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\conjure.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\deprecate.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\display.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\drawing-wand.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\identify.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\import.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\magick-cli.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\magick-image.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\magick-property.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\magick-wand-private.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\MagickWand.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\method-attribute.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\mogrify-private.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\mogrify.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\montage.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\operation-private.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\operation.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\pixel-iterator.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\pixel-wand-private.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\pixel-wand.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\script-token.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\stream.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\studio.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\wand-view.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\wand.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\wandcli-private.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickWand\wandcli.h">
+      <Filter>MagickWand</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MagickWand">
+      <UniqueIdentifier>{B1ADA5C7-CC6D-BDF9-B1AD-A5C7CC6DBDF9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

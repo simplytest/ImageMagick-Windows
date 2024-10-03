@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-additional-sel.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-attr-sel.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-cascade.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-declaration.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-doc-handler.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-enc-handler.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-fonts.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-input.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-num.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-om-parser.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-parser.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-parsing-location.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-prop-list.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-pseudo.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-rgb.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-sel-eng.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-selector.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-simple-sel.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-statement.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-string.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-style.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-stylesheet.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-term.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-tknzr.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-token.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\croco\src\cr-utils.c">
+      <Filter>croco\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-additional-sel.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-attr-sel.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-cascade.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-declaration.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-doc-handler.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-enc-handler.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-fonts.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-input.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-num.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-om-parser.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-parser.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-parsing-location.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-prop-list.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-pseudo.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-rgb.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-sel-eng.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-selector.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-simple-sel.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-statement.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-string.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-style.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-stylesheet.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-term.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-tknzr.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-token.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\cr-utils.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\libcroco-config.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\croco\src\libcroco.h">
+      <Filter>croco\src</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="croco\src">
+      <UniqueIdentifier>{44BA468C-3C33-93D5-44BA-468C3C3393D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="croco">
+      <UniqueIdentifier>{44BA468C-3C33-93D5-44BA-468C3C3393D5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

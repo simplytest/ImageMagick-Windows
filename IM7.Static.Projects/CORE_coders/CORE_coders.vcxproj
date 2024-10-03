@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_coders</ProjectName>
+    <ProjectGuid>{EE2787B2-B0E9-8501-EE27-87B2B0E98501}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Artifacts\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CORE_DB_coders_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CORE_RL_coders_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\x64\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\x64\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_DB_coders_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;..\..\ImageMagick\;..\..\Dependencies\raw\libraw;..\..\Dependencies\exr\imath;..\..\Dependencies\exr\imath\src\Imath;..\..\Dependencies\exr\openexr;..\..\Dependencies\exr\openexr\src\lib\OpenEXR;..\..\Dependencies\exr\openexr\src\lib\OpenEXRCore;..\..\OptionalDependencies\flif\src\library;..\..\Dependencies\heif;..\..\Dependencies\heif\libheif\api;..\..\OptionalDependencies\jbig\libjbig;..\..\Dependencies\openjpeg\src\lib\openjp2;..\..\Dependencies\jpeg-turbo;..\..\Dependencies\jpeg-xl\lib\include;..\..\Dependencies\zlib;..\..\Dependencies\bzlib;..\..\Dependencies\lzma\src\liblzma\api;..\..\Dependencies\xml\include;..\..\Dependencies\zip\lib;..\..\Dependencies\cairo\src;..\..\Dependencies\glib;..\..\Dependencies\glib\glib;..\..\Dependencies\harfbuzz\src;..\..\Dependencies\pango;..\..\Dependencies\png;..\..\Dependencies\glib\gmodule;..\..\Dependencies\rsvg;..\..\Dependencies\rsvg\gdk-pixbuf;..\..\Dependencies\tiff\libtiff;..\..\Dependencies\freetype\include;..\..\Dependencies\webp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;LIBRAW_NODLL;LIBHEIF_STATIC_BUILD;OPJ_STATIC;JXL_STATIC_DEFINE;JXL_THREADS_STATIC_DEFINE;LZMA_API_STATIC;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_RL_coders_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>;..\..\ImageMagick\;..\..\Dependencies\raw\libraw;..\..\Dependencies\exr\imath;..\..\Dependencies\exr\imath\src\Imath;..\..\Dependencies\exr\openexr;..\..\Dependencies\exr\openexr\src\lib\OpenEXR;..\..\Dependencies\exr\openexr\src\lib\OpenEXRCore;..\..\OptionalDependencies\flif\src\library;..\..\Dependencies\heif;..\..\Dependencies\heif\libheif\api;..\..\OptionalDependencies\jbig\libjbig;..\..\Dependencies\openjpeg\src\lib\openjp2;..\..\Dependencies\jpeg-turbo;..\..\Dependencies\jpeg-xl\lib\include;..\..\Dependencies\zlib;..\..\Dependencies\bzlib;..\..\Dependencies\lzma\src\liblzma\api;..\..\Dependencies\xml\include;..\..\Dependencies\zip\lib;..\..\Dependencies\cairo\src;..\..\Dependencies\glib;..\..\Dependencies\glib\glib;..\..\Dependencies\harfbuzz\src;..\..\Dependencies\pango;..\..\Dependencies\png;..\..\Dependencies\glib\gmodule;..\..\Dependencies\rsvg;..\..\Dependencies\rsvg\gdk-pixbuf;..\..\Dependencies\tiff\libtiff;..\..\Dependencies\freetype\include;..\..\Dependencies\webp\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;LIBRAW_NODLL;LIBHEIF_STATIC_BUILD;OPJ_STATIC;JXL_STATIC_DEFINE;JXL_THREADS_STATIC_DEFINE;LZMA_API_STATIC;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ImageMagick\coders\aai.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\art.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ashlar.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\avs.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\bayer.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\bgr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\bmp.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\braille.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\cals.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\caption.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\cin.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\cip.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\clip.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\clipboard.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\cmyk.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\cube.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\cut.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dcm.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dds.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\debug.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dib.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\djvu.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dmr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dng.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dot.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dps.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dpx.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\emf.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ept.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\exr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\farbfeld.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\fax.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\fits.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\fl32.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\flif.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\fpx.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ftxt.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\gif.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\gradient.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\gray.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\hald.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\hdr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\heic.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\histogram.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\hrz.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\html.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\icon.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\info.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\inline.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ipl.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\jbig.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\jnx.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\jp2.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\jpeg.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\json.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\jxl.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\kernel.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\label.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mac.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\magick.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\map.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mask.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mat.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\matte.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\meta.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\miff.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mono.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mpc.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mpr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\msl.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mtv.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mvg.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\null.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ora.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\otb.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\palm.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pango.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pattern.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pcd.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pcl.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pcx.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pdb.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pdf.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pes.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pgx.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pict.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pix.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\plasma.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\png.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pnm.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ps.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ps2.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ps3.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\psd.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pwp.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\qoi.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\raw.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\rgb.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\rgf.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\rla.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\rle.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\scr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\screenshot.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\sct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\sfw.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\sgi.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\sixel.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\stegano.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\strimg.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\sun.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\svg.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\tga.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\thumbnail.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\tiff.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\tile.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\tim.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\tim2.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ttf.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\txt.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\uhdr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\uil.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\url.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\uyvy.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\vicar.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\vid.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\video.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\viff.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\vips.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\wbmp.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\webp.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\wpg.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\xbm.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\xc.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\xcf.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\xpm.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\xps.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\yaml.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ycbcr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\yuv.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ImageMagick\coders\aai.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\art.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\ashlar.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\avs.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\bayer.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\bgr.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\bmp.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\braille.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\bytebuffer-private.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\cals.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\caption.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\cin.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\cip.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\clip.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\clipboard.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\cmyk.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\coders-list.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\coders-private.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\coders.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\cube.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\cut.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\dcm.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\dds.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\debug.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\dib.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\djvu.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\dmr.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\dng.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\dot.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\dps.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\dpx.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\emf.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\ept.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\exr.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\farbfeld.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\fax.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\fits.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\fl32.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\flif.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\fpx.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\ftxt.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\ghostscript-private.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\gif.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\gradient.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\gray.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\hald.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\hdr.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\heic.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\histogram.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\hrz.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\html.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\icon.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\info.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\inline.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\ipl.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\jbig.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\jnx.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\jp2.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\jpeg.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\json.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\jxl.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\kernel.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\label.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\mac.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\magick.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\map.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\mask.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\mat.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\matte.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\meta.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\miff.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\mono.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\mpc.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\mpr.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\msl.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\mtv.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\mvg.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\null.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\ora.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\otb.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\palm.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\pango.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\pattern.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\pcd.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\pcl.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\pcx.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\pdb.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\pdf.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\pes.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\pgx.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\pict.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\pix.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\plasma.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\png.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\pnm.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\ps.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\ps2.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\ps3.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\psd-private.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\psd.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\pwp.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\qoi.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\raw.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\rgb.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\rgf.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\rla.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\rle.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\scr.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\screenshot.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\sct.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\sfw.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\sgi.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\sixel.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\stegano.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\strimg.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\sun.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\svg.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\tga.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\thumbnail.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\tiff.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\tile.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\tim.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\tim2.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\ttf.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\txt.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\uhdr.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\uil.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\url.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\uyvy.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\vicar.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\vid.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\video.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\viff.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\vips.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\wbmp.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\webp.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\wpg.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\xbm.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\xc.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\xcf.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\xpm.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\xps.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\yaml.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\ycbcr.h" />
+    <ClInclude Include="..\..\ImageMagick\coders\yuv.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Projects\coders\ImageMagick.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CORE_MagickCore\CORE_MagickCore.vcxproj">
+      <Project>{051DFF6F-91A6-E9CC-051D-FF6F91A6E9CC}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_raw\CORE_raw.vcxproj">
+      <Project>{87859AD5-0078-BA13-8785-9AD50078BA13}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_exr\CORE_exr.vcxproj">
+      <Project>{3C0F0AD5-6657-E0D4-3C0F-0AD56657E0D4}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_heif\CORE_heif.vcxproj">
+      <Project>{CE4D7DC6-2E62-25DB-CE4D-7DC62E6225DB}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_openjpeg\CORE_openjpeg.vcxproj">
+      <Project>{103CF468-5468-A6AD-103C-F4685468A6AD}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_jpeg-turbo\CORE_jpeg-turbo.vcxproj">
+      <Project>{DF84D7B4-7C42-22A0-DF84-D7B47C4222A0}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_jpeg-xl\CORE_jpeg-xl.vcxproj">
+      <Project>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_zlib\CORE_zlib.vcxproj">
+      <Project>{7C996431-366B-1192-7C99-6431366B1192}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_bzlib\CORE_bzlib.vcxproj">
+      <Project>{421578B5-27F8-D2A2-4215-78B527F8D2A2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_lzma\CORE_lzma.vcxproj">
+      <Project>{DFBA4DEA-1DAD-BC8B-DFBA-4DEA1DADBC8B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_xml\CORE_xml.vcxproj">
+      <Project>{DE4D49D5-31AB-7D28-DE4D-49D531AB7D28}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_zip\CORE_zip.vcxproj">
+      <Project>{CBDCE7D5-26E9-0AC2-CBDC-E7D526E90AC2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_cairo\CORE_cairo.vcxproj">
+      <Project>{C603D509-5C15-8EF1-C603-D5095C158EF1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_glib\CORE_glib.vcxproj">
+      <Project>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_pango\CORE_pango.vcxproj">
+      <Project>{3D6BEAE3-4025-2D00-3D6B-EAE340252D00}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_png\CORE_png.vcxproj">
+      <Project>{99AEFCD5-0AFF-29D6-99AE-FCD50AFF29D6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_rsvg\CORE_rsvg.vcxproj">
+      <Project>{256789EF-7550-3CDF-2567-89EF75503CDF}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_tiff\CORE_tiff.vcxproj">
+      <Project>{7095371F-8524-9E00-7095-371F85249E00}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_freetype\CORE_freetype.vcxproj">
+      <Project>{CA15B256-D622-0031-CA15-B256D6220031}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_webp\CORE_webp.vcxproj">
+      <Project>{6618FB07-8CE6-2081-6618-FB078CE62081}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

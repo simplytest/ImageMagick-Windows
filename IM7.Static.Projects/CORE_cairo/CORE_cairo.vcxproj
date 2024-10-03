@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_cairo</ProjectName>
+    <ProjectGuid>{C603D509-5C15-8EF1-C603-D5095C158EF1}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Artifacts\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CORE_DB_cairo_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CORE_RL_cairo_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\x64\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\x64\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_DB_cairo_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\cairo\src;..\..\Dependencies\freetype\include;..\..\Dependencies\glib;..\..\Dependencies\pixman\pixman;..\..\Dependencies\png;..\..\Dependencies\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;CAIRO_FEATURES_H;CAIRO_COMPILATION;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_RL_cairo_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\cairo\src;..\..\Dependencies\freetype\include;..\..\Dependencies\glib;..\..\Dependencies\pixman\pixman;..\..\Dependencies\png;..\..\Dependencies\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;CAIRO_FEATURES_H;CAIRO_COMPILATION;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-analysis-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-arc.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-array.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-atomic.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-base64-stream.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-base85-stream.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-bentley-ottmann-rectangular.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-bentley-ottmann-rectilinear.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-bentley-ottmann.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-botor-scan-converter.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-boxes-intersect.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-boxes.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-cache.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-cff-subset.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-clip-boxes.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-clip-polygon.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-clip-region.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-clip-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-clip-tor-scan-converter.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-clip.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-color.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-colr-glyph-render.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-composite-rectangles.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-compositor.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-contour.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-damage.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-debug.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-default-context.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-deflate-stream.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-device.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-error.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-fallback-compositor.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-fixed.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-font-face-twin-data.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-font-face-twin.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-font-face.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-font-options.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-freed-pool.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-freelist.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-ft-font.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-gstate.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-hash.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-hull.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-image-compositor.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-image-info.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-image-source.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-image-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-line.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-lzw.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-mask-compositor.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-matrix.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-mempool.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-mesh-pattern-rasterizer.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-misc.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-mono-scan-converter.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-mutex.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-no-compositor.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-observer.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-output-stream.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-paginated-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-path-bounds.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-path-fill.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-path-fixed.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-path-in-fill.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-path-stroke-boxes.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-path-stroke-polygon.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-path-stroke-traps.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-path-stroke-tristrip.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-path-stroke.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-path.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-pattern.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-pdf-interchange.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-pdf-operators.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-pdf-shading.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-pdf-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-pen.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-png.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-polygon-intersect.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-polygon-reduce.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-polygon.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-ps-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-raster-source-pattern.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-recording-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-rectangle.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-rectangular-scan-converter.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-region.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-rtree.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-scaled-font-subsets.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-scaled-font.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-script-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-shape-mask-compositor.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-slope.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-spans-compositor.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-spans.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-spline.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-stroke-dash.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-stroke-style.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-surface-clipper.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-surface-fallback.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-surface-observer.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-surface-offset.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-surface-snapshot.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-surface-subsurface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-surface-wrapper.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-svg-glyph-render.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-svg-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-tag-attributes.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-tag-stack.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-time.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-tor-scan-converter.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-tor22-scan-converter.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-toy-font-face.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-traps-compositor.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-traps.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-tristrip.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-truetype-subset.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-type1-fallback.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-type1-glyph-names.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-type1-subset.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-type3-glyph-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-unicode.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-user-font.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-version.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo-wideint.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\cairo.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\test-base-compositor-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\test-compositor-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\test-null-compositor-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\test-paginated-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\win32\cairo-win32-debug.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\win32\cairo-win32-device.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\win32\cairo-win32-display-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\win32\cairo-win32-font.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\win32\cairo-win32-gdi-compositor.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\win32\cairo-win32-printing-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\win32\cairo-win32-surface.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\cairo\src\win32\cairo-win32-system.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-analysis-surface-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-arc-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-array-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-atomic-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-backend-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-box-inline.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-boxes-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-cache-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-clip-inline.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-clip-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-combsort-inline.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-compiler-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-composite-rectangles-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-compositor-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-contour-inline.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-contour-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-ctype-inline.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-damage-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-default-context-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-deprecated.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-device-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-dwrite.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-error-inline.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-error-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-features.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-fixed-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-fixed-type-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-fontconfig-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-freed-pool-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-freelist-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-freelist-type-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-ft-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-ft.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-gstate-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-hash-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-image-info-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-image-surface-inline.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-image-surface-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-line-inline.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-line-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-list-inline.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-list-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-malloc-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-mempool-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-mutex-impl-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-mutex-list-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-mutex-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-mutex-type-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-output-stream-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-paginated-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-paginated-surface-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-path-fixed-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-path-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-pattern-inline.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-pattern-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-pdf-operators-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-pdf-shading-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-pdf-surface-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-pdf.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-pixman-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-ps-surface-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-ps.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-recording-surface-inline.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-recording-surface-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-reference-count-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-region-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-rtree-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-scaled-font-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-scaled-font-subsets-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-script-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-script.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-slope-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-spans-compositor-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-spans-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-stroke-dash-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-surface-backend-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-surface-clipper-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-surface-fallback-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-surface-inline.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-surface-observer-inline.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-surface-observer-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-surface-offset-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-surface-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-surface-snapshot-inline.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-surface-snapshot-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-surface-subsurface-inline.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-surface-subsurface-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-surface-wrapper-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-svg-surface-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-svg.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-tag-attributes-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-tag-stack-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-time-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-traps-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-tristrip-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-truetype-subset-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-type1-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-type3-glyph-surface-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-types-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-user-font-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-version.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-wideint-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-wideint-type-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo-win32.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairo.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\cairoint.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\config.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\test-compositor-surface-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\test-compositor-surface.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\test-null-compositor-surface.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\test-paginated-surface.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\win32\cairo-win32-private.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\win32\d2d1-extra.h" />
+    <ClInclude Include="..\..\Dependencies\cairo\src\win32\dw-extra.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Dependencies\cairo\.ImageMagick\ImageMagick.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CORE_freetype\CORE_freetype.vcxproj">
+      <Project>{CA15B256-D622-0031-CA15-B256D6220031}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_glib\CORE_glib.vcxproj">
+      <Project>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_pixman\CORE_pixman.vcxproj">
+      <Project>{D60D8CB3-0D08-28EC-D60D-8CB30D0828EC}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_png\CORE_png.vcxproj">
+      <Project>{99AEFCD5-0AFF-29D6-99AE-FCD50AFF29D6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_zlib\CORE_zlib.vcxproj">
+      <Project>{7C996431-366B-1192-7C99-6431366B1192}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

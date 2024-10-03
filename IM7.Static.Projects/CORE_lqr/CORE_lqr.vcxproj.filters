@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_carver.c">
+      <Filter>lqr\lqr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_carver_bias.c">
+      <Filter>lqr\lqr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_carver_list.c">
+      <Filter>lqr\lqr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_carver_rigmask.c">
+      <Filter>lqr\lqr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_cursor.c">
+      <Filter>lqr\lqr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_energy.c">
+      <Filter>lqr\lqr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_gradient.c">
+      <Filter>lqr\lqr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_progress.c">
+      <Filter>lqr\lqr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_rwindow.c">
+      <Filter>lqr\lqr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_vmap.c">
+      <Filter>lqr\lqr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_vmap_list.c">
+      <Filter>lqr\lqr</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_all.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_base.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_bias.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_bias_priv.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_bias_pub.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_list.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_list_priv.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_list_pub.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_macros_priv.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_priv.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_pub.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_rigmask.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_rigmask_priv.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_rigmask_pub.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_cursor.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_cursor_priv.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_cursor_pub.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_energy.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_energy_priv.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_energy_pub.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_gradient.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_gradient_priv.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_gradient_pub.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_progress.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_progress_priv.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_progress_pub.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_rwindow.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_rwindow_priv.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_rwindow_pub.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_vmap.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_vmap_list.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_vmap_list_priv.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_vmap_list_pub.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_vmap_priv.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lqr\lqr\lqr_vmap_pub.h">
+      <Filter>lqr\lqr</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="lqr\lqr">
+      <UniqueIdentifier>{8B986BD5-93D6-D092-8B98-6BD593D6D092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lqr">
+      <UniqueIdentifier>{8B986BD5-93D6-D092-8B98-6BD593D6D092}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

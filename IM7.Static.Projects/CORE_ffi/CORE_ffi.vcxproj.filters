@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\ffi\src\closures.c">
+      <Filter>ffi\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\ffi\src\debug.c">
+      <Filter>ffi\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\ffi\src\prep_cif.c">
+      <Filter>ffi\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\ffi\src\raw_api.c">
+      <Filter>ffi\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\ffi\src\tramp.c">
+      <Filter>ffi\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\ffi\src\types.c">
+      <Filter>ffi\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\ffi\src\aarch64\ffi.c">
+      <Filter>ffi\src\aarch64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\ffi\src\x86\ffi.c">
+      <Filter>ffi\src\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\ffi\src\x86\ffiw64.c">
+      <Filter>ffi\src\x86</Filter>
+    </ClCompile>
+    <CustomBuild Include="..\..\Dependencies\ffi\src\x86\win64.asm">
+      <Filter>ffi\src\x86</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\Dependencies\ffi\include\ffi.h">
+      <Filter>ffi\include</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\ffi\include\fficonfig.h">
+      <Filter>ffi\include</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\ffi\include\ffi_cfi.h">
+      <Filter>ffi\include</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\ffi\include\ffi_common.h">
+      <Filter>ffi\include</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\ffi\include\tramp.h">
+      <Filter>ffi\include</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\ffi\src\aarch64\ffitarget.h">
+      <Filter>ffi\src\aarch64</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\ffi\src\aarch64\internal.h">
+      <Filter>ffi\src\aarch64</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\ffi\src\x86\asmnames.h">
+      <Filter>ffi\src\x86</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\ffi\src\x86\ffitarget.h">
+      <Filter>ffi\src\x86</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\ffi\src\x86\internal.h">
+      <Filter>ffi\src\x86</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\ffi\src\x86\internal64.h">
+      <Filter>ffi\src\x86</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ffi\src">
+      <UniqueIdentifier>{34B2C4D5-628B-1D86-34B2-C4D5628B1D86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ffi">
+      <UniqueIdentifier>{34B2C4D5-628B-1D86-34B2-C4D5628B1D86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ffi\src\aarch64">
+      <UniqueIdentifier>{34B2C4D5-628B-1D86-34B2-C4D5628B1D86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ffi\src\x86">
+      <UniqueIdentifier>{34B2C4D5-628B-1D86-34B2-C4D5628B1D86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ffi\include">
+      <UniqueIdentifier>{34B2C4D5-628B-1D86-34B2-C4D5628B1D86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

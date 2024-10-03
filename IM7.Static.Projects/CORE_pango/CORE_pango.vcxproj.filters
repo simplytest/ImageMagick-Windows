@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\pango\pango\break-arabic.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\break-indic.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\break-thai.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\break.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\ellipsize.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\fonts.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\glyphstring.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-attributes.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-bidi-type.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-color.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-context.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-coverage.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-emoji.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-engine.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-enum-types.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-fontmap.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-fontset.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-glyph-item.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-gravity.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-item.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-language.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-layout.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-markup.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-matrix.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-renderer.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-script.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-tabs.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-utils.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangocairo-context.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangocairo-font.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangocairo-fontmap.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangocairo-render.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangocairo-win32font.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangocairo-win32fontmap.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangofc-shape.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangowin32-fontcache.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangowin32-fontmap.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangowin32.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\reorder-items.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\shape.c">
+      <Filter>pango\pango</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\Dependencies\pango\pango\config.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-attributes-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-attributes.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-bidi-type.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-break-table.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-break.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-color-table.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-context.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-coverage-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-coverage.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-direction.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-emoji-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-emoji-table.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-engine.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-enum-types.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-features.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-font-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-font.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-fontmap-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-fontmap.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-fontset-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-fontset.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-glyph-item.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-glyph.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-gravity.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-impl-utils.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-item.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-language-sample-table.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-language.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-layout-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-layout.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-matrix.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-modules.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-ot-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-ot.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-renderer.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-script-lang-table.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-script-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-script.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-tabs.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-types.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-utils-internal.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-utils-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-utils.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango-version-macros.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pango.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangocairo-coretext.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangocairo-fc-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangocairo-fc.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangocairo-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangocairo-win32.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangocairo.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangocoretext-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangofc-font-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangofc-fontmap-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangofc-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangoft2-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangohb-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangowin32-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangowin32.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangoxft-private.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pango\pango\pangoxft.h">
+      <Filter>pango\pango</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="pango\pango">
+      <UniqueIdentifier>{3D6BEAE3-4025-2D00-3D6B-EAE340252D00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pango">
+      <UniqueIdentifier>{3D6BEAE3-4025-2D00-3D6B-EAE340252D00}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_freetype</ProjectName>
+    <ProjectGuid>{CA15B256-D622-0031-CA15-B256D6220031}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Artifacts\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CORE_DB_freetype_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CORE_RL_freetype_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\x64\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\x64\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_DB_freetype_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\freetype\include;..\..\Dependencies\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;FT2_BUILD_LIBRARY;FT_CONFIG_OPTION_ERROR_STRINGS;FT_CONFIG_OPTION_SYSTEM_ZLIB;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_RL_freetype_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\freetype\include;..\..\Dependencies\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;FT2_BUILD_LIBRARY;FT_CONFIG_OPTION_ERROR_STRINGS;FT_CONFIG_OPTION_SYSTEM_ZLIB;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\freetype\src\autofit\afblue.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\autofit\afcjk.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\autofit\afdummy.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\autofit\afglobal.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\autofit\afhints.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\autofit\afindic.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\autofit\aflatin.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\autofit\afloader.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\autofit\afmodule.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\autofit\afranges.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\autofit\afshaper.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\autofit\ft-hb.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftadvanc.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftbbox.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftbdf.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftbitmap.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftcalc.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftcid.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftcolor.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftdbgmem.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftdebug.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\fterrors.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftfntfmt.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftfstype.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftgasp.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftgloadr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftglyph.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftgxval.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\fthash.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftinit.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftlcdfil.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftmac.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftmm.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftobjs.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftotval.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftoutln.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftpatent.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftpfr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftpsprop.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftrfork.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftsnames.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftstream.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftstroke.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftsynth.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftsystem.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\fttrigon.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\fttype1.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftutil.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\ftwinfnt.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\base\md5.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\bdf\bdfdrivr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\bdf\bdflib.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cache\ftcbasic.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cache\ftccache.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cache\ftccmap.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cache\ftcglyph.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cache\ftcimage.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cache\ftcmanag.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cache\ftcmru.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cache\ftcsbits.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cff\cffcmap.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cff\cffdrivr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cff\cffgload.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cff\cffload.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cff\cffobjs.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cff\cffparse.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cid\cidgload.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cid\cidload.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cid\cidobjs.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cid\cidparse.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\cid\cidriver.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\dlg\dlg.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\dlg\dlgwrap.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\gzip\ftgzip.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\lzw\ftlzw.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\pcf\pcfdrivr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\pcf\pcfread.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\pcf\pcfutil.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\pfr\pfrcmap.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\pfr\pfrdrivr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\pfr\pfrgload.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\pfr\pfrload.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\pfr\pfrobjs.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\pfr\pfrsbit.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\afmparse.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\cffdecode.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\psarrst.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\psauxmod.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\psblues.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\psconv.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\pserror.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\psfont.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\psft.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\pshints.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\psintrp.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\psobjs.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\psread.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\psstack.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\t1cmap.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psaux\t1decode.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\pshinter\pshalgo.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\pshinter\pshglob.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\pshinter\pshmod.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\pshinter\pshrec.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\psnames\psmodule.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\raster\ftraster.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\raster\ftrend1.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sdf\sdf.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\pngshim.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\sfdriver.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\sfobjs.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\sfwoff.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\sfwoff2.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\ttbdf.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\ttcmap.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\ttcolr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\ttcpal.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\ttgpos.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\ttkern.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\ttload.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\ttmtx.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\ttpost.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\ttsbit.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\ttsvg.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\sfnt\woff2tags.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\smooth\ftgrays.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\smooth\ftsmooth.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\svg\svg.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\truetype\ttdriver.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\truetype\ttgload.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\truetype\ttgxvar.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\truetype\ttinterp.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\truetype\ttobjs.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\truetype\ttpload.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\type1\t1afm.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\type1\t1driver.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\type1\t1gload.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\type1\t1load.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\type1\t1objs.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\type1\t1parse.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\type42\t42drivr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\type42\t42objs.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\type42\t42parse.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\freetype\src\winfonts\winfnt.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Dependencies\freetype\include\ft2build.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\afblue.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\afcjk.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\afcover.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\afdummy.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\aferrors.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\afglobal.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\afhints.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\afindic.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\aflatin.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\afloader.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\afmodule.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\afranges.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\afscript.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\afshaper.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\afstyles.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\aftypes.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\afws-decl.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\afws-iter.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\autofit\ft-hb.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\base\md5.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\bdf\bdfdrivr.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\bdf\bdferror.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cache\ftccache.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cache\ftccback.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cache\ftcerror.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cache\ftcglyph.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cache\ftcimage.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cache\ftcmanag.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cache\ftcmru.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cache\ftcsbits.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cff\cffcmap.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cff\cffdrivr.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cff\cfferrs.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cff\cffgload.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cff\cffload.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cff\cffobjs.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cff\cffparse.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cff\cfftoken.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cid\ciderrs.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cid\cidgload.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cid\cidload.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cid\cidobjs.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cid\cidparse.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cid\cidriver.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\cid\cidtoken.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\gzip\ftzconf.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\gzip\gzguts.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\gzip\inffixed.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\gzip\zlib.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pcf\pcfdrivr.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pcf\pcferror.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pcf\pcfread.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pcf\pcfutil.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pfr\pfrcmap.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pfr\pfrdrivr.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pfr\pfrerror.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pfr\pfrgload.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pfr\pfrload.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pfr\pfrobjs.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pfr\pfrsbit.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pfr\pfrtypes.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\afmparse.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\cffdecode.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\psarrst.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\psauxerr.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\psauxmod.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\psblues.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\psconv.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\pserror.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\psfixed.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\psfont.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\psft.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\psglue.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\pshints.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\psintrp.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\psobjs.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\psread.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\psstack.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\pstypes.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\t1cmap.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psaux\t1decode.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pshinter\pshalgo.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pshinter\pshglob.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pshinter\pshmod.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pshinter\pshnterr.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\pshinter\pshrec.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psnames\psmodule.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psnames\psnamerr.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\psnames\pstables.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\raster\ftmisc.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\raster\ftraster.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\raster\ftrend1.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\raster\rasterrs.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sdf\ftsdferrs.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\pngshim.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\sfdriver.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\sferrors.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\sfobjs.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\sfwoff.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\sfwoff2.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\ttbdf.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\ttcmap.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\ttcmapc.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\ttcolr.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\ttcpal.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\ttgpos.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\ttkern.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\ttload.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\ttmtx.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\ttpost.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\ttsbit.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\ttsvg.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\sfnt\woff2tags.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\smooth\ftgrays.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\smooth\ftsmerrs.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\smooth\ftsmooth.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\svg\svgtypes.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\truetype\ttdriver.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\truetype\tterrors.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\truetype\ttgload.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\truetype\ttgxvar.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\truetype\ttinterp.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\truetype\ttobjs.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\truetype\ttpload.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\type1\t1afm.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\type1\t1driver.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\type1\t1errors.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\type1\t1gload.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\type1\t1load.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\type1\t1objs.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\type1\t1parse.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\type1\t1tokens.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\type42\t42drivr.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\type42\t42error.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\type42\t42objs.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\type42\t42parse.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\type42\t42types.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\winfonts\fnterrs.h" />
+    <ClInclude Include="..\..\Dependencies\freetype\src\winfonts\winfnt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Dependencies\freetype\.ImageMagick\ImageMagick.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CORE_zlib\CORE_zlib.vcxproj">
+      <Project>{7C996431-366B-1192-7C99-6431366B1192}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

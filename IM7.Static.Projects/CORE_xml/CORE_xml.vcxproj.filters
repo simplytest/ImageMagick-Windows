@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\xml\buf.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\c14n.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\catalog.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\chvalid.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\debugXML.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\dict.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\encoding.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\entities.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\error.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\globals.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\hash.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\HTMLparser.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\HTMLtree.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\legacy.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\list.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\parser.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\parserInternals.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\pattern.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\relaxng.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\SAX.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\SAX2.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\schematron.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\threads.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\tree.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\uri.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\valid.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\xinclude.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\xlink.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\xmlIO.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\xmlmemory.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\xmlmodule.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\xmlreader.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\xmlregexp.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\xmlsave.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\xmlschemas.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\xmlschemastypes.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\xmlstring.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\xmlunicode.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\xmlwriter.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\xpointer.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\xml\xzlib.c">
+      <Filter>xml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\Dependencies\xml\config.h">
+      <Filter>xml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\libxml.h">
+      <Filter>xml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\timsort.h">
+      <Filter>xml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\win32config.h">
+      <Filter>xml\include</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\wsockcompat.h">
+      <Filter>xml\include</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\c14n.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\catalog.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\chvalid.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\debugXML.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\dict.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\encoding.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\entities.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\globals.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\hash.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\HTMLparser.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\HTMLtree.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\list.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\parser.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\parserInternals.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\pattern.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\relaxng.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\SAX.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\SAX2.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\schemasInternals.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\schematron.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\threads.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\tree.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\uri.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\valid.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xinclude.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xlink.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xmlautomata.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xmlerror.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xmlexports.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xmlIO.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xmlmemory.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xmlmodule.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xmlreader.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xmlregexp.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xmlsave.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xmlschemas.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xmlschemastypes.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xmlstring.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xmlunicode.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xmlversion.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xmlwriter.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xpathInternals.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\xml\include\libxml\xpointer.h">
+      <Filter>xml\include\libxml</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="xml">
+      <UniqueIdentifier>{DE4D49D5-31AB-7D28-DE4D-49D531AB7D28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml\include">
+      <UniqueIdentifier>{DE4D49D5-31AB-7D28-DE4D-49D531AB7D28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml\include\libxml">
+      <UniqueIdentifier>{DE4D49D5-31AB-7D28-DE4D-49D531AB7D28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

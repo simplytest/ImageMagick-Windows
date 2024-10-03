@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jcapistd.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jccoefct.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jccolor.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jcdctmgr.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jcdiffct.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jclossls.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jcmainct.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jcprepct.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jcsample.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jdapistd.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jdcoefct.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jdcolor.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jddctmgr.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jddiffct.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jdlossls.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jdmainct.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jdmerge.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jdpostct.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jdsample.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jfdctfst.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jfdctint.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jidctflt.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jidctfst.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jidctint.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jidctred.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jquant1.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jquant2.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jutils.c">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\cderror.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\cmyk.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jconfig.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jconfigint.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jdcoefct.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jdct.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jdmainct.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jdmerge.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jdsample.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jinclude.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jlossls.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jmemsys.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jmorecfg.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jpegapicomp.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jpegint.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jpeglib.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jsamplecomp.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jsimd.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jsimddct.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-turbo-12\..\jpeg-turbo\jversion.h">
+      <Filter>jpeg-turbo-12\jpeg-turbo</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="jpeg-turbo-12\jpeg-turbo">
+      <UniqueIdentifier>{8F70180F-FFDB-6160-8F70-180FFFDB6160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg-turbo-12">
+      <UniqueIdentifier>{8F70180F-FFDB-6160-8F70-180FFFDB6160}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

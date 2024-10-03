@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_harfbuzz</ProjectName>
+    <ProjectGuid>{8A9E0609-D5EE-EA79-8A9E-0609D5EEEA79}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Artifacts\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CORE_DB_harfbuzz_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CORE_RL_harfbuzz_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\x64\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\x64\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_DB_harfbuzz_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\freetype\include;..\..\Dependencies\glib;..\..\Dependencies\glib\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;HAVE_GLIB;HAVE_FREETYPE;HARFBUZZ_COMPILATION;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_RL_harfbuzz_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\freetype\include;..\..\Dependencies\glib;..\..\Dependencies\glib\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;HAVE_GLIB;HAVE_FREETYPE;HARFBUZZ_COMPILATION;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-aat-layout.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-aat-map.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-blob.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-buffer-serialize.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-buffer-verify.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-buffer.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-cairo-utils.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-cairo.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-common.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-coretext.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-directwrite.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-draw.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-face-builder.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-face.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-fallback-shape.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-font.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ft.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-gdi.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-glib.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-gobject-structs.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-graphite2.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-icu.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-map.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-number.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-cff1-table.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-cff2-table.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-color.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-face.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-font.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-layout.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-map.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-math.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-meta.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-metrics.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-name.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shape-fallback.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shape-normalize.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shape.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-arabic.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-default.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-hangul.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-hebrew.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-indic-table.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-indic.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-khmer.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-myanmar.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-syllabic.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-thai.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-use.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-vowel-constraints.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-tag.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-var.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-outline.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-paint-extents.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-paint.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-set.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-shape-plan.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-shape.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-shaper.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-static.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-style.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ucd.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-unicode.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-uniscribe.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-wasm-api.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-wasm-shape.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-aat-layout.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-aat.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-blob.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-buffer.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-cairo.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-common.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-coretext.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-deprecated.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-directwrite.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-draw.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-face.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-font.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-ft.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-gdi.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-glib.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-gobject-structs.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-gobject.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-graphite2.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-icu.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-map.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-color.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-deprecated.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-font.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-layout.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-math.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-meta.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-metrics.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-name.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-shape.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-var.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-paint.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-set.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-shape-plan.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-shape.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-style.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-unicode.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-uniscribe.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-version.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb-wasm-api.h" />
+    <ClInclude Include="..\..\Dependencies\harfbuzz\src\hb.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Dependencies\harfbuzz\.ImageMagick\ImageMagick.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CORE_freetype\CORE_freetype.vcxproj">
+      <Project>{CA15B256-D622-0031-CA15-B256D6220031}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_glib\CORE_glib.vcxproj">
+      <Project>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

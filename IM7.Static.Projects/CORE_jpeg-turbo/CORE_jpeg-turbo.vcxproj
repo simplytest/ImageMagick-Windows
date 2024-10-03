@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_jpeg-turbo</ProjectName>
+    <ProjectGuid>{DF84D7B4-7C42-22A0-DF84-D7B47C4222A0}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Artifacts\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CORE_DB_jpeg-turbo_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CORE_RL_jpeg-turbo_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\x64\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\x64\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_DB_jpeg-turbo_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_RL_jpeg-turbo_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jaricom.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jcapimin.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jcapistd.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jcarith.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jccoefct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jccolor.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jcdctmgr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jcdiffct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jchuff.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jcicc.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jcinit.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jclhuff.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jclossls.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jcmainct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jcmarker.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jcmaster.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jcomapi.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jcparam.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jcphuff.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jcprepct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jcsample.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jctrans.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdapimin.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdapistd.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdarith.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdatadst.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdatasrc.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdcoefct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdcolor.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jddctmgr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jddiffct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdhuff.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdicc.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdinput.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdlhuff.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdlossls.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdmainct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdmarker.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdmaster.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdmerge.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdphuff.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdpostct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdsample.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jdtrans.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jerror.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jfdctflt.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jfdctfst.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jfdctint.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jidctflt.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jidctfst.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jidctint.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jidctred.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jmemmgr.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jmemnobs.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jpeg_nbits.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jquant1.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jquant2.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\jutils.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\transupp.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jccolor-avx2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jccolor-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jcgray-avx2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jcgray-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jchuff-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jcphuff-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jcsample-avx2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jcsample-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jdcolor-avx2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jdcolor-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jdmerge-avx2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jdmerge-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jdsample-avx2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jdsample-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jfdctflt-sse.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jfdctfst-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jfdctint-avx2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jfdctint-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jidctflt-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jidctfst-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jidctint-avx2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jidctint-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jidctred-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jquantf-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jquanti-avx2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jquanti-sse2.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jsimd.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <CustomBuild Include="..\..\Dependencies\jpeg-turbo\simd\x86_64\jsimdcpu.asm">
+      <Command>..\..\Build\nasm -i"..\..\Dependencies\jpeg-turbo\simd\x86_64" -fwin64 -DWIN64 -D__x86_64__ -i"..\..\\Dependencies\jpeg-turbo\simd\nasm" -o "$(IntDir)%(Filename).obj" "%(FullPath)"</Command>
+      <Outputs>$(IntDir)%(Filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\cderror.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\cmyk.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jchuff.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jcmaster.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jconfig.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jconfigint.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jdcoefct.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jdct.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jdhuff.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jdmainct.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jdmaster.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jdmerge.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jdsample.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jerror.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jinclude.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jlossls.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jmemsys.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jmorecfg.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jpegapicomp.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jpegint.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jpeglib.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jpeg_nbits.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jsamplecomp.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jsimd.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jsimddct.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\jversion.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-turbo\transupp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Dependencies\jpeg-turbo\.ImageMagick\ImageMagick.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CORE_jpeg-turbo-12\CORE_jpeg-turbo-12.vcxproj">
+      <Project>{8F70180F-FFDB-6160-8F70-180FFFDB6160}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_jpeg-turbo-16\CORE_jpeg-turbo-16.vcxproj">
+      <Project>{8F701C0F-FFDB-682C-8F70-1C0FFFDB682C}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

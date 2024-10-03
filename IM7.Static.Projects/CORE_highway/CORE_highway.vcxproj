@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_highway</ProjectName>
+    <ProjectGuid>{A297BBD9-7039-6566-A297-BBD970396566}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Artifacts\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CORE_DB_highway_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CORE_RL_highway_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\x64\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\x64\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_DB_highway_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\highway;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;HWY_STATIC_DEFINE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_RL_highway_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\highway;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;HWY_STATIC_DEFINE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\highway\hwy\abort.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\highway\hwy\aligned_allocator.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\highway\hwy\per_target.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\highway\hwy\print.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\highway\hwy\stats.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\highway\hwy\targets.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\highway\hwy\timer.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Dependencies\highway\hwy\abort.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\aligned_allocator.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\base.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\bit_set.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\cache_control.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\detect_compiler_arch.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\detect_targets.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\foreach_target.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\highway.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\highway_export.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\per_target.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\print-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\print.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\profiler.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\robust_statistics.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\stats.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\targets.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\timer-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\timer.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\ops\arm_neon-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\ops\arm_sve-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\ops\emu128-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\ops\generic_ops-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\ops\inside-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\ops\ppc_vsx-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\ops\rvv-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\ops\scalar-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\ops\set_macros-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\ops\shared-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\ops\wasm_128-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\ops\wasm_256-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\ops\x86_128-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\ops\x86_256-inl.h" />
+    <ClInclude Include="..\..\Dependencies\highway\hwy\ops\x86_512-inl.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

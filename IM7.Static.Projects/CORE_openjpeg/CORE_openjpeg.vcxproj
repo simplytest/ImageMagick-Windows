@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_openjpeg</ProjectName>
+    <ProjectGuid>{103CF468-5468-A6AD-103C-F4685468A6AD}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Artifacts\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CORE_DB_openjpeg_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CORE_RL_openjpeg_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\x64\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\x64\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_DB_openjpeg_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;DLL_EXPORT;OPJ_STATIC;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_RL_openjpeg_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;DLL_EXPORT;OPJ_STATIC;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\bio.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\cio.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\dwt.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\event.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\function_list.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\ht_dec.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\image.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\invert.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\j2k.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\jp2.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\mct.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\mqc.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\openjpeg.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\opj_clock.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\opj_malloc.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\pi.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\sparse_array.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\t1.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\t1_ht_generate_luts.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\t2.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\tcd.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\test_sparse_array.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\tgt.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\openjpeg\src\lib\openjp2\thread.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\bio.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\cio.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\dwt.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\event.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\function_list.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\image.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\indexbox_manager.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\invert.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\j2k.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\jp2.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\mct.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\mqc.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\mqc_inl.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\openjpeg.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\opj_clock.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\opj_codec.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\opj_common.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\opj_config.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\opj_config_private.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\opj_includes.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\opj_intmath.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\opj_malloc.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\pi.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\sparse_array.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\t1.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\t1_ht_luts.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\t1_luts.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\t2.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\tcd.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\tgt.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\thread.h" />
+    <ClInclude Include="..\..\Dependencies\openjpeg\src\lib\openjp2\tls_keys.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Dependencies\openjpeg\.ImageMagick\ImageMagick.rc" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

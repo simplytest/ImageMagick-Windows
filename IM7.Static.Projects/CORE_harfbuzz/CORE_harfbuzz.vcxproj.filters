@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-aat-layout.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-aat-map.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-blob.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-buffer-serialize.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-buffer-verify.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-buffer.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-cairo-utils.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-cairo.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-common.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-coretext.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-directwrite.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-draw.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-face-builder.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-face.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-fallback-shape.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-font.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ft.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-gdi.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-glib.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-gobject-structs.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-graphite2.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-icu.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-map.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-number.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-cff1-table.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-cff2-table.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-color.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-face.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-font.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-layout.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-map.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-math.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-meta.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-metrics.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-name.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shape-fallback.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shape-normalize.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shape.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-arabic.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-default.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-hangul.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-hebrew.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-indic-table.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-indic.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-khmer.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-myanmar.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-syllabic.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-thai.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-use.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-shaper-vowel-constraints.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-tag.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ot-var.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-outline.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-paint-extents.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-paint.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-set.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-shape-plan.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-shape.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-shaper.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-static.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-style.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-ucd.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-unicode.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-uniscribe.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-wasm-api.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\harfbuzz\src\hb-wasm-shape.cc">
+      <Filter>harfbuzz\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-aat-layout.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-aat.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-blob.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-buffer.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-cairo.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-common.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-coretext.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-deprecated.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-directwrite.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-draw.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-face.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-font.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-ft.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-gdi.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-glib.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-gobject-structs.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-gobject.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-graphite2.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-icu.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-map.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-color.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-deprecated.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-font.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-layout.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-math.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-meta.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-metrics.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-name.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-shape.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot-var.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-ot.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-paint.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-set.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-shape-plan.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-shape.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-style.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-unicode.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-uniscribe.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-version.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb-wasm-api.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\harfbuzz\src\hb.h">
+      <Filter>harfbuzz\src</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="harfbuzz\src">
+      <UniqueIdentifier>{8A9E0609-D5EE-EA79-8A9E-0609D5EEEA79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="harfbuzz">
+      <UniqueIdentifier>{8A9E0609-D5EE-EA79-8A9E-0609D5EEEA79}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

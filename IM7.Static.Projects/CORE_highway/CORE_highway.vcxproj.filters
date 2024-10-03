@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\highway\hwy\abort.cc">
+      <Filter>highway\hwy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\highway\hwy\aligned_allocator.cc">
+      <Filter>highway\hwy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\highway\hwy\per_target.cc">
+      <Filter>highway\hwy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\highway\hwy\print.cc">
+      <Filter>highway\hwy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\highway\hwy\stats.cc">
+      <Filter>highway\hwy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\highway\hwy\targets.cc">
+      <Filter>highway\hwy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\highway\hwy\timer.cc">
+      <Filter>highway\hwy</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\abort.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\aligned_allocator.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\base.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\bit_set.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\cache_control.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\detect_compiler_arch.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\detect_targets.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\foreach_target.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\highway.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\highway_export.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\per_target.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\print-inl.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\print.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\profiler.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\robust_statistics.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\stats.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\targets.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\timer-inl.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\timer.h">
+      <Filter>highway\hwy</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\ops\arm_neon-inl.h">
+      <Filter>highway\hwy\ops</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\ops\arm_sve-inl.h">
+      <Filter>highway\hwy\ops</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\ops\emu128-inl.h">
+      <Filter>highway\hwy\ops</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\ops\generic_ops-inl.h">
+      <Filter>highway\hwy\ops</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\ops\inside-inl.h">
+      <Filter>highway\hwy\ops</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\ops\ppc_vsx-inl.h">
+      <Filter>highway\hwy\ops</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\ops\rvv-inl.h">
+      <Filter>highway\hwy\ops</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\ops\scalar-inl.h">
+      <Filter>highway\hwy\ops</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\ops\set_macros-inl.h">
+      <Filter>highway\hwy\ops</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\ops\shared-inl.h">
+      <Filter>highway\hwy\ops</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\ops\wasm_128-inl.h">
+      <Filter>highway\hwy\ops</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\ops\wasm_256-inl.h">
+      <Filter>highway\hwy\ops</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\ops\x86_128-inl.h">
+      <Filter>highway\hwy\ops</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\ops\x86_256-inl.h">
+      <Filter>highway\hwy\ops</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\highway\hwy\ops\x86_512-inl.h">
+      <Filter>highway\hwy\ops</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="highway\hwy">
+      <UniqueIdentifier>{A297BBD9-7039-6566-A297-BBD970396566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="highway">
+      <UniqueIdentifier>{A297BBD9-7039-6566-A297-BBD970396566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="highway\hwy\ops">
+      <UniqueIdentifier>{A297BBD9-7039-6566-A297-BBD970396566}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

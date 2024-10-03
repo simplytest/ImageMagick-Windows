@@ -1,0 +1,1995 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gaction.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gactiongroup.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gactionmap.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gappinfo.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gasynchelper.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gasyncinitable.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gasyncresult.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gbufferedinputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gbufferedoutputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gbytesicon.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gcancellable.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gcharsetconverter.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gcontenttype-win32.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gcontextspecificgroup.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gconverter.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gconverterinputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gconverteroutputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gcredentials.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gdatagrambased.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gdatainputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gdataoutputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gdelayedsettingsbackend.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gdrive.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gdtlsclientconnection.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gdtlsconnection.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gdtlsserverconnection.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gdummyfile.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gdummyproxyresolver.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gdummytlsbackend.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gemblem.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gemblemedicon.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gfile.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gfileattribute.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gfiledescriptorbased.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gfileenumerator.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gfileicon.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gfileinfo.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gfileinputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gfileiostream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gfilemonitor.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gfilenamecompleter.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gfileoutputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gfilterinputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gfilteroutputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\ghttpproxy.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gicon.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\ginetaddress.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\ginetaddressmask.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\ginetsocketaddress.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\ginitable.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\ginputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gioenumtypes.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gioerror.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\giomodule-priv.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\giomodule.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gioscheduler.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\giostream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gkeyfilesettingsbackend.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\glistmodel.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gliststore.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gloadableicon.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\glocalfile.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\glocalfileenumerator.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\glocalfileinfo.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\glocalfileinputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\glocalfileiostream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\glocalfilemonitor.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\glocalfileoutputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\glocalvfs.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gmarshal-internal.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gmemoryinputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gmemorymonitor.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gmemoryoutputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gmemorysettingsbackend.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gmenu.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gmenumodel.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gmount.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gmountoperation.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gnativesocketaddress.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gnativevolumemonitor.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gnetworkaddress.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gnetworking.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gnetworkmonitor.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gnetworkmonitorbase.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gnetworkservice.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gnullsettingsbackend.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\goutputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gpermission.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gpollableinputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gpollableoutputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gpollableutils.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gpollfilemonitor.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gportalsupport.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gpropertyaction.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gproxy.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gproxyaddress.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gproxyaddressenumerator.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gproxyresolver.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gregistrysettingsbackend.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gremoteactiongroup.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gresolver.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gresource.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gresourcefile.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gseekable.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsettings-mapping.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsettings.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsettingsbackend.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsettingsschema.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsimpleaction.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsimpleactiongroup.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsimpleasyncresult.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsimpleiostream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsimplepermission.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsimpleproxyresolver.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsocket.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsocketaddress.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsocketaddressenumerator.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsocketclient.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsocketconnectable.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsocketconnection.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsocketcontrolmessage.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsocketinputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsocketoutputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsocks4aproxy.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsocks4proxy.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsocks5proxy.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gsrvtarget.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gtask.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gtcpconnection.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gtcpwrapperconnection.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gthemedicon.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gthreadedresolver.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gtlsbackend.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gtlscertificate.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gtlsclientconnection.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gtlsconnection.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gtlsdatabase.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gtlsfiledatabase.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gtlsinteraction.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gtlspassword.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gtlsserverconnection.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gunionvolumemonitor.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gvfs.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gvolume.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gvolumemonitor.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gwin32appinfo.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gwin32inputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gwin32mount.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gwin32networkmonitor.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gwin32outputstream.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gwin32registrykey.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gwin32volumemonitor.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gzlibcompressor.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gzlibdecompressor.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\strinfo.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\thumbnail-verify.c">
+      <Filter>glib\gio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gvdb\gvdb-builder.c">
+      <Filter>glib\gio\gvdb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\gvdb\gvdb-reader.c">
+      <Filter>glib\gio\gvdb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\win32\gwin32filemonitor.c">
+      <Filter>glib\gio\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\win32\gwin32fsmonitorutils.c">
+      <Filter>glib\gio\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\win32\gwinhttpfile.c">
+      <Filter>glib\gio\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\win32\gwinhttpfileinputstream.c">
+      <Filter>glib\gio\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\win32\gwinhttpfileoutputstream.c">
+      <Filter>glib\gio\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gio\win32\gwinhttpvfs.c">
+      <Filter>glib\gio\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\docs.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\garcbox.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\garray.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gasyncqueue.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gatomic.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gbacktrace.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gbase64.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gbitlock.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gbookmarkfile.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gbytes.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gcharset.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gchecksum.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gconvert.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gdataset.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gdate.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gdatetime.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gdir.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\genviron.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gerror.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gfileutils.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\ggettext.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\ghash.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\ghmac.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\ghook.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\ghostutils.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\giochannel.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\giowin32.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gkeyfile.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\glib-init.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\glib-private.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\glist.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gmain.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gmappedfile.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gmarkup.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gmem.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gmessages.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnode.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\goption.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gpattern.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gpoll.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gprimes.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gprintf.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gqsort.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gquark.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gqueue.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\grand.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\grcbox.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\grefcount.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\grefstring.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gregex.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gscanner.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gsequence.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gshell.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gslice.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gslist.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gspawn-win32.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gstdio.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gstrfuncs.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gstring.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gstringchunk.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gtestutils.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gthread-win32.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gthread.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gthreadpool.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gtimer.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gtimezone.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gtranslit.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gtrashstack.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gtree.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gunibreak.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gunicollate.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gunidecomp.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\guniprop.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gurifuncs.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gutf8.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gutils.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\guuid.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gvariant-core.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gvariant-parser.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gvariant-serialiser.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gvariant.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gvarianttype.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gvarianttypeinfo.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gversion.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gwakeup.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gwin32.c">
+      <Filter>glib\glib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\dirent\dirent.c">
+      <Filter>glib\glib\dirent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\dirent\wdirent.c">
+      <Filter>glib\glib\dirent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\asnprintf.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\frexp.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\frexpl.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\isinf.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\isnand.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\isnanf.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\isnanl.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\printf-args.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\printf-frexp.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\printf-frexpl.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\printf-parse.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\printf.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\signbitd.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\signbitf.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\signbitl.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\vasnprintf.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\gnulib\xsize.c">
+      <Filter>glib\glib\gnulib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\libcharset\localcharset.c">
+      <Filter>glib\glib\libcharset</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_byte_order.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_chartables.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_compile.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_config.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_dfa_exec.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_exec.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_fullinfo.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_get.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_globals.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_jit_compile.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_newline.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_ord2utf8.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_string_utils.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_study.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_tables.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_valid_utf8.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_version.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\glib\pcre\pcre_xclass.c">
+      <Filter>glib\glib\pcre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gmodule\gmodule.c">
+      <Filter>glib\gmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gatomicarray.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gbinding.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gboxed.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gclosure.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\genums.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gmarshal.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gobject.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gobjectnotifyqueue.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gparam.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gparamspecs.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gsignal.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gsourceclosure.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gtype.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gtypemodule.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gtypeplugin.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gvalue.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gvaluearray.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gvaluetransform.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\glib\gobject\gvaluetypes.c">
+      <Filter>glib\gobject</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\Dependencies\glib\msvc_recommended_pragmas.h">
+      <Filter>glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gaction.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gactiongroup.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gactionmap.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gappinfo.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gappinfoprivate.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gapplicationimpl.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gasynchelper.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gasyncinitable.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gasyncresult.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gbufferedinputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gbufferedoutputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gbytesicon.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gcancellable.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gcharsetconverter.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gcontenttypeprivate.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gcontextspecificgroup.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gconverter.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gconverterinputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gconverteroutputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gcredentials.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gcredentialsprivate.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gdatagrambased.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gdatainputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gdataoutputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gdbusactiongroup-private.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gdelayedsettingsbackend.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gdrive.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gdtlsclientconnection.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gdtlsconnection.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gdtlsserverconnection.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gdummyfile.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gdummyproxyresolver.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gdummytlsbackend.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gemblem.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gemblemedicon.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gfile.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gfileattribute-priv.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gfileattribute.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gfiledescriptorbased.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gfileenumerator.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gfileicon.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gfileinfo-priv.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gfileinfo.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gfileinputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gfileiostream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gfilemonitor.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gfilenamecompleter.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gfileoutputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gfilterinputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gfilteroutputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\ghttpproxy.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gicon.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\ginetaddress.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\ginetaddressmask.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\ginetsocketaddress.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\ginitable.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\ginputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gio-autocleanups.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gio.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gioenums.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gioenumtypes.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gioerror.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\giomodule-priv.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\giomodule.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gioprivate.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gioscheduler.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\giostream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\giotypes.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\giowin32-priv.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gio_trace.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\glistmodel.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gliststore.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gloadableicon.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\glocalfile.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\glocalfileenumerator.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\glocalfileinfo.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\glocalfileinputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\glocalfileiostream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\glocalfilemonitor.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\glocalfileoutputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\glocalfileprivate.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\glocalvfs.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gmarshal-internal.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gmemoryinputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gmemorymonitor.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gmemoryoutputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gmenu.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gmenumodel.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gmount.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gmountoperation.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gmountprivate.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gnativesocketaddress.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gnativevolumemonitor.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gnetworkaddress.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gnetworking.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gnetworkingprivate.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gnetworkmonitor.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gnetworkmonitorbase.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gnetworkservice.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gnotification-private.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\goutputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gpermission.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gpollableinputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gpollableoutputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gpollableutils.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gpollfilemonitor.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gportalsupport.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gpropertyaction.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gproxy.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gproxyaddress.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gproxyaddressenumerator.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gproxyresolver.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gregistrysettingsbackend.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gremoteactiongroup.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gresolver.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gresource.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gresourcefile.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gseekable.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsettings-mapping.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsettings.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsettingsbackend.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsettingsbackendinternal.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsettingsschema-internal.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsettingsschema.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsimpleaction.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsimpleactiongroup.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsimpleasyncresult.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsimpleiostream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsimplepermission.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsimpleproxyresolver.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsocket.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsocketaddress.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsocketaddressenumerator.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsocketclient.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsocketconnectable.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsocketconnection.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsocketcontrolmessage.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsocketinputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsocketoutputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsocks4aproxy.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsocks4proxy.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsocks5proxy.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsrvtarget.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gsubprocesslauncher-private.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gtask.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gtcpconnection.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gtcpwrapperconnection.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gthemedicon.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gthreadedresolver.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gtlsbackend.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gtlscertificate.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gtlsclientconnection.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gtlsconnection.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gtlsdatabase.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gtlsfiledatabase.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gtlsinteraction.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gtlspassword.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gtlsserverconnection.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gunionvolumemonitor.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gvfs.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gvolume.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gvolumemonitor.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gwin32appinfo.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gwin32inputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gwin32mount.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gwin32networking.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gwin32networkmonitor.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gwin32outputstream.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gwin32registrykey.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gwin32volumemonitor.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gzlibcompressor.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gzlibdecompressor.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\thumbnail-verify.h">
+      <Filter>glib\gio</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gvdb\gvdb-builder.h">
+      <Filter>glib\gio\gvdb</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gvdb\gvdb-format.h">
+      <Filter>glib\gio\gvdb</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\gvdb\gvdb-reader.h">
+      <Filter>glib\gio\gvdb</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\win32\gwin32filemonitor.h">
+      <Filter>glib\gio\win32</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\win32\gwin32fsmonitorutils.h">
+      <Filter>glib\gio\win32</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\win32\gwinhttpfile.h">
+      <Filter>glib\gio\win32</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\win32\gwinhttpfileinputstream.h">
+      <Filter>glib\gio\win32</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\win32\gwinhttpfileoutputstream.h">
+      <Filter>glib\gio\win32</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\win32\gwinhttpvfs.h">
+      <Filter>glib\gio\win32</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gio\win32\winhttp.h">
+      <Filter>glib\gio\win32</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\config.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\galloca.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\garray.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gasyncqueue.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gasyncqueueprivate.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gatomic.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gbacktrace.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gbase64.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gbitlock.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gbookmarkfile.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gbsearcharray.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gbytes.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gcharset.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gcharsetprivate.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gchecksum.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gconstructor.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gconvert.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gdataset.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gdatasetprivate.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gdate.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gdatetime.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gdir.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\genviron.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gerror.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gfileutils.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\ggettext.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\ghash.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\ghmac.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\ghook.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\ghostutils.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gi18n-lib.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gi18n.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\giochannel.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gkeyfile.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\glib-autocleanups.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\glib-init.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\glib-object.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\glib-private.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\glib.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\glibconfig.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\glibintl.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\glib_trace.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\glist.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gmacros.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gmain-internal.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gmain.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gmappedfile.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gmarkup.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gmem.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gmessages.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gmirroringtable.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnode.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\goption.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gpattern.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gpoll.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gprimes.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gprintf.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gprintfint.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gqsort.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gquark.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gqueue.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\grand.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\grcbox.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\grcboxprivate.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\grefcount.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\grefstring.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gregex.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gscanner.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gscripttable.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gsequence.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gshell.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gslice.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gslist.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gspawn-private.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gstdio.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gstdioprivate.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gstrfuncs.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gstring.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gstringchunk.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gtestutils.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gthread.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gthreadpool.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gthreadprivate.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gtimer.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gtimezone.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gtranslit-data.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gtrashstack.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gtree.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gtypes.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gunibreak.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gunichartables.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gunicode.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gunicodeprivate.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gunicomp.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gunidecomp.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gurifuncs.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gutils.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gutilsprivate.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\guuid.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gvalgrind.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gvariant-core.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gvariant-internal.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gvariant-serialiser.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gvariant.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gvarianttype.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gvarianttypeinfo.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gversion.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gversionmacros.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gwakeup.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gwin32.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\valgrind.h">
+      <Filter>glib\glib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\dirent\dirent.h">
+      <Filter>glib\glib\dirent</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\arg-nonnull.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\c++defs.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\float+.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\fpucw.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\g-gnulib.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\gnulib_math.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\isnand-nolibm.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\isnanf-nolibm.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\isnanl-nolibm.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\printf-args.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\printf-frexp.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\printf-frexpl.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\printf-parse.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\printf.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\vasnprintf.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\verify.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\gnulib\xsize.h">
+      <Filter>glib\glib\gnulib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\libcharset\libcharset.h">
+      <Filter>glib\glib\libcharset</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\libcharset\localcharset.h">
+      <Filter>glib\glib\libcharset</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\pcre\pcre.h">
+      <Filter>glib\glib\pcre</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\pcre\pcre_internal.h">
+      <Filter>glib\glib\pcre</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\glib\pcre\ucp.h">
+      <Filter>glib\glib\pcre</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gmodule\gmodule.h">
+      <Filter>glib\gmodule</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gmodule\gmoduleconf.h">
+      <Filter>glib\gmodule</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gatomicarray.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gbinding.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gboxed.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gclosure.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\genums.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\glib-enumtypes.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\glib-types.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gmarshal.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gobject-autocleanups.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gobject.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gobject_trace.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gparam.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gparamspecs.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gsignal.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gsourceclosure.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gtype-private.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gtype.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gtypemodule.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gtypeplugin.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gvalue.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gvaluearray.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gvaluecollector.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\glib\gobject\gvaluetypes.h">
+      <Filter>glib\gobject</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="glib\gio">
+      <UniqueIdentifier>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glib">
+      <UniqueIdentifier>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glib\gio\gvdb">
+      <UniqueIdentifier>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glib\gio\win32">
+      <UniqueIdentifier>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glib\glib">
+      <UniqueIdentifier>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glib\glib\dirent">
+      <UniqueIdentifier>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glib\glib\gnulib">
+      <UniqueIdentifier>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glib\glib\libcharset">
+      <UniqueIdentifier>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glib\glib\pcre">
+      <UniqueIdentifier>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glib\gmodule">
+      <UniqueIdentifier>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glib\gobject">
+      <UniqueIdentifier>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

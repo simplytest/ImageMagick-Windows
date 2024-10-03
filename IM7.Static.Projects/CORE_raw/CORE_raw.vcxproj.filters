@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\raw\src\libraw_c_api.cpp">
+      <Filter>raw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\libraw_datastream.cpp">
+      <Filter>raw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\decoders\canon_600.cpp">
+      <Filter>raw\src\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\decoders\crx.cpp">
+      <Filter>raw\src\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\decoders\decoders_dcraw.cpp">
+      <Filter>raw\src\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\decoders\decoders_libraw.cpp">
+      <Filter>raw\src\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\decoders\decoders_libraw_dcrdefs.cpp">
+      <Filter>raw\src\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\decoders\dng.cpp">
+      <Filter>raw\src\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\decoders\fp_dng.cpp">
+      <Filter>raw\src\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\decoders\fuji_compressed.cpp">
+      <Filter>raw\src\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\decoders\generic.cpp">
+      <Filter>raw\src\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\decoders\kodak_decoders.cpp">
+      <Filter>raw\src\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\decoders\load_mfbacks.cpp">
+      <Filter>raw\src\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\decoders\smal.cpp">
+      <Filter>raw\src\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\decoders\unpack.cpp">
+      <Filter>raw\src\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\decoders\unpack_thumb.cpp">
+      <Filter>raw\src\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\demosaic\aahd_demosaic.cpp">
+      <Filter>raw\src\demosaic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\demosaic\ahd_demosaic.cpp">
+      <Filter>raw\src\demosaic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\demosaic\dcb_demosaic.cpp">
+      <Filter>raw\src\demosaic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\demosaic\dht_demosaic.cpp">
+      <Filter>raw\src\demosaic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\demosaic\misc_demosaic.cpp">
+      <Filter>raw\src\demosaic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\demosaic\xtrans_demosaic.cpp">
+      <Filter>raw\src\demosaic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\integration\dngsdk_glue.cpp">
+      <Filter>raw\src\integration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\integration\rawspeed_glue.cpp">
+      <Filter>raw\src\integration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\adobepano.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\canon.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\ciff.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\cr3_parser.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\epson.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\exif_gps.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\fuji.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\hasselblad_model.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\identify.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\identify_tools.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\kodak.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\leica.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\makernotes.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\mediumformat.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\minolta.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\misc_parsers.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\nikon.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\normalize_model.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\olympus.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\p1.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\pentax.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\samsung.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\sony.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\metadata\tiff.cpp">
+      <Filter>raw\src\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\postprocessing\aspect_ratio.cpp">
+      <Filter>raw\src\postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\postprocessing\dcraw_process.cpp">
+      <Filter>raw\src\postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\postprocessing\mem_image.cpp">
+      <Filter>raw\src\postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\postprocessing\postprocessing_aux.cpp">
+      <Filter>raw\src\postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\postprocessing\postprocessing_utils.cpp">
+      <Filter>raw\src\postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\postprocessing\postprocessing_utils_dcrdefs.cpp">
+      <Filter>raw\src\postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\preprocessing\ext_preprocess.cpp">
+      <Filter>raw\src\preprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\preprocessing\raw2image.cpp">
+      <Filter>raw\src\preprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\preprocessing\subtract_black.cpp">
+      <Filter>raw\src\preprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\tables\cameralist.cpp">
+      <Filter>raw\src\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\tables\colorconst.cpp">
+      <Filter>raw\src\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\tables\colordata.cpp">
+      <Filter>raw\src\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\tables\wblists.cpp">
+      <Filter>raw\src\tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\utils\curves.cpp">
+      <Filter>raw\src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\utils\decoder_info.cpp">
+      <Filter>raw\src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\utils\init_close_utils.cpp">
+      <Filter>raw\src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\utils\open.cpp">
+      <Filter>raw\src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\utils\phaseone_processing.cpp">
+      <Filter>raw\src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\utils\read_utils.cpp">
+      <Filter>raw\src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\utils\thumb_utils.cpp">
+      <Filter>raw\src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\utils\utils_dcraw.cpp">
+      <Filter>raw\src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\utils\utils_libraw.cpp">
+      <Filter>raw\src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\write\apply_profile.cpp">
+      <Filter>raw\src\write</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\write\file_write.cpp">
+      <Filter>raw\src\write</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\raw\src\write\tiff_writer.cpp">
+      <Filter>raw\src\write</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\Dependencies\raw\internal\dcraw_defs.h">
+      <Filter>raw\internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\raw\internal\dcraw_fileio_defs.h">
+      <Filter>raw\internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\raw\internal\defines.h">
+      <Filter>raw\internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\raw\internal\dmp_include.h">
+      <Filter>raw\internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\raw\internal\libraw_cameraids.h">
+      <Filter>raw\internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\raw\internal\libraw_cxx_defs.h">
+      <Filter>raw\internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\raw\internal\libraw_internal_funcs.h">
+      <Filter>raw\internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\raw\internal\var_defines.h">
+      <Filter>raw\internal</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\raw\internal\x3f_tools.h">
+      <Filter>raw\internal</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="raw\src">
+      <UniqueIdentifier>{87859AD5-0078-BA13-8785-9AD50078BA13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raw">
+      <UniqueIdentifier>{87859AD5-0078-BA13-8785-9AD50078BA13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raw\src\decoders">
+      <UniqueIdentifier>{87859AD5-0078-BA13-8785-9AD50078BA13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raw\src\demosaic">
+      <UniqueIdentifier>{87859AD5-0078-BA13-8785-9AD50078BA13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raw\src\integration">
+      <UniqueIdentifier>{87859AD5-0078-BA13-8785-9AD50078BA13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raw\src\metadata">
+      <UniqueIdentifier>{87859AD5-0078-BA13-8785-9AD50078BA13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raw\src\postprocessing">
+      <UniqueIdentifier>{87859AD5-0078-BA13-8785-9AD50078BA13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raw\src\preprocessing">
+      <UniqueIdentifier>{87859AD5-0078-BA13-8785-9AD50078BA13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raw\src\tables">
+      <UniqueIdentifier>{87859AD5-0078-BA13-8785-9AD50078BA13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raw\src\utils">
+      <UniqueIdentifier>{87859AD5-0078-BA13-8785-9AD50078BA13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raw\src\write">
+      <UniqueIdentifier>{87859AD5-0078-BA13-8785-9AD50078BA13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raw\internal">
+      <UniqueIdentifier>{87859AD5-0078-BA13-8785-9AD50078BA13}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

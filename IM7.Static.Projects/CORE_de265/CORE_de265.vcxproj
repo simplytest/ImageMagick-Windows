@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_de265</ProjectName>
+    <ProjectGuid>{A80F0415-EAB7-065F-A80F-0415EAB7065F}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Artifacts\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CORE_DB_de265_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CORE_RL_de265_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\x64\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\x64\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_DB_de265_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\de265;..\..\Dependencies\de265\libde265;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;HAVE_STDINT_H;LIBDE265_STATIC_BUILD;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_RL_de265_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\de265;..\..\Dependencies\de265\libde265;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;HAVE_STDINT_H;LIBDE265_STATIC_BUILD;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\de265\extra\getopt.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\extra\getopt_long.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\extra\win32cond.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\alloc_pool.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\bitstream.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\cabac.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\configparam.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\contextmodel.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\de265.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\deblock.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\decctx.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\dpb.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\en265.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\fallback-dct.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\fallback-motion.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\fallback.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\image-io.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\image.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\intrapred.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\md5.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\motion.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\nal-parser.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\nal.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\pps.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\quality.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\refpic.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\sao.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\scan.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\sei.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\slice.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\sps.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\threads.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\transform.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\util.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\visualize.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\vps.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\vui.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\encoder-context.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\encoder-core.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\encoder-intrapred.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\encoder-motion.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\encoder-params.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\encoder-syntax.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\encoder-types.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\encpicbuf.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\sop.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\algo\algo.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\algo\cb-interpartmode.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\algo\cb-intra-inter.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\algo\cb-intrapartmode.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\algo\cb-mergeindex.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\algo\cb-skip.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\algo\cb-split.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\algo\coding-options.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\algo\ctb-qscale.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\algo\pb-mv.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\algo\tb-intrapredmode.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\algo\tb-rateestim.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\algo\tb-split.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\de265\libde265\encoder\algo\tb-transform.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Dependencies\de265\extra\getopt.h" />
+    <ClInclude Include="..\..\Dependencies\de265\extra\win32cond.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\acceleration.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\alloc_pool.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\bitstream.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\cabac.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\configparam.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\contextmodel.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\de265-version.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\de265.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\deblock.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\decctx.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\dpb.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\en265.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\fallback-dct.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\fallback-motion.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\fallback.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\image-io.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\image.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\intrapred.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\md5.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\motion.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\nal-parser.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\nal.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\pps.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\quality.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\refpic.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\sao.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\scan.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\sei.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\slice.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\sps.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\threads.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\transform.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\util.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\visualize.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\vps.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\vui.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\encoder-context.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\encoder-core.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\encoder-intrapred.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\encoder-motion.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\encoder-params.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\encoder-syntax.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\encoder-types.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\encpicbuf.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\sop.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\algo\algo.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\algo\cb-interpartmode.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\algo\cb-intra-inter.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\algo\cb-intrapartmode.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\algo\cb-mergeindex.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\algo\cb-skip.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\algo\cb-split.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\algo\coding-options.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\algo\ctb-qscale.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\algo\pb-mv.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\algo\tb-intrapredmode.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\algo\tb-rateestim.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\algo\tb-split.h" />
+    <ClInclude Include="..\..\Dependencies\de265\libde265\encoder\algo\tb-transform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Dependencies\de265\.ImageMagick\ImageMagick.rc" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

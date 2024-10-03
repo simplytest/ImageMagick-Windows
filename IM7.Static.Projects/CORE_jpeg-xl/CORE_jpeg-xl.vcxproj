@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_jpeg-xl</ProjectName>
+    <ProjectGuid>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Artifacts\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CORE_DB_jpeg-xl_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CORE_RL_jpeg-xl_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\x64\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\x64\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_DB_jpeg-xl_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\jpeg-xl;..\..\Dependencies\jpeg-xl\lib\include;..\..\Dependencies\highway;..\..\Dependencies\brotli\c\include;..\..\Dependencies\lcms\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;JXL_CMS_STATIC_DEFINE;JXL_STATIC_DEFINE;JXL_THREADS_STATIC_DEFINE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_RL_jpeg-xl_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\jpeg-xl;..\..\Dependencies\jpeg-xl\lib\include;..\..\Dependencies\highway;..\..\Dependencies\brotli\c\include;..\..\Dependencies\lcms\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;JXL_CMS_STATIC_DEFINE;JXL_STATIC_DEFINE;JXL_THREADS_STATIC_DEFINE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\ac_strategy.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\alpha.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\ans_common.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\blending.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\box_content_decoder.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\chroma_from_luma.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\coeff_order.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\color_encoding_internal.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\compressed_dc.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\convolve_separable5.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\convolve_slow.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\convolve_symmetric3.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\convolve_symmetric5.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dct_scales.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\decode.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\decode_to_jpeg.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_ans.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_cache.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_context_map.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_external_image.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_frame.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_group.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_group_border.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_huffman.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_modular.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_noise.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_patch_dictionary.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_transforms_testonly.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_xyb.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\encode.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_ac_strategy.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_adaptive_quantization.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_ans.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_aux_out.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_bit_writer.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_butteraugli_comparator.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_cache.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_chroma_from_luma.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_cluster.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_coeff_order.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_comparator.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_context_map.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_debug_image.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_detect_dots.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_dot_dictionary.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_entropy_coder.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_external_image.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_fast_lossless.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_fields.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_frame.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_gaborish.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_group.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_heuristics.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_huffman.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_huffman_tree.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_icc_codec.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_image_bundle.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_linalg.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_modular.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_noise.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_patch_dictionary.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_photon_noise.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_progressive_split.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_quant_weights.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_splines.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_toc.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_transforms.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_xyb.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\entropy_coder.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\epf.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\fields.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\frame_header.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\headers.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\huffman_table.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\icc_codec.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\icc_codec_common.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\image.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\image_bundle.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\image_metadata.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\image_ops.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\loop_filter.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\luminance.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\memory_manager_internal.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\opsin_params.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\passes_state.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\quantizer.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\quant_weights.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\simd_util.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\splines.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\toc.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\butteraugli\butteraugli.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\jxl_cms.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\dec_jpeg_data.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\dec_jpeg_data_writer.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\enc_jpeg_data.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\enc_jpeg_data_reader.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\enc_jpeg_huffman_decode.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\jpeg_data.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\modular_image.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\dec_ma.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\encoding.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\enc_debug_tree.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\enc_encoding.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\enc_ma.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_palette.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_rct.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_squeeze.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_transform.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\palette.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\rct.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\squeeze.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\transform.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\low_memory_render_pipeline.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\render_pipeline.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\simple_render_pipeline.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_blending.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_chroma_upsampling.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_cms.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_epf.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_from_linear.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_gaborish.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_noise.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_patches.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_splines.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_spot.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_tone_mapping.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_to_linear.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_upsampling.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_write.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_xyb.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_ycbcr.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\threads\resizable_parallel_runner.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\threads\thread_parallel_runner.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\threads\thread_parallel_runner_internal.cc">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\cms.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\cms_interface.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\codestream_header.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\color_encoding.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\compressed_icc.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\decode.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\decode_cxx.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\encode.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\encode_cxx.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\gain_map.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\jxl_cms_export.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\jxl_export.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\jxl_threads_export.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\memory_manager.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\parallel_runner.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\resizable_parallel_runner.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\resizable_parallel_runner_cxx.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\stats.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\thread_parallel_runner.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\thread_parallel_runner_cxx.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\types.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\version.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\ac_context.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\ac_strategy.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\alpha.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\ans_common.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\ans_params.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\blending.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\box_content_decoder.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\chroma_from_luma.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\codec_in_out.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\coeff_order.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\coeff_order_fwd.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\color_encoding_internal.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\common.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\compressed_dc.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\convolve-inl.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\convolve.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dct-inl.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dct_block-inl.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dct_scales.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dct_util.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\decode_to_jpeg.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_ans.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_bit_reader.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_cache.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_context_map.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_external_image.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_frame.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_group.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_group_border.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_huffman.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_modular.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_noise.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_patch_dictionary.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_transforms-inl.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_transforms_testonly.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_xyb-inl.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_xyb.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\encode_internal.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_ac_strategy.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_adaptive_quantization.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_ans.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_ans_params.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_aux_out.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_bit_writer.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_butteraugli_comparator.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_cache.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_chroma_from_luma.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_cluster.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_coeff_order.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_comparator.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_context_map.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_debug_image.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_detect_dots.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_dot_dictionary.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_entropy_coder.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_external_image.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_fast_lossless.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_fields.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_frame.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_gaborish.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_gamma_correct.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_group.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_heuristics.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_huffman.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_huffman_tree.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_icc_codec.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_image_bundle.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_linalg.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_modular.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_noise.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_optimize.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_params.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_patch_dictionary.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_photon_noise.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_progressive_split.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_quant_weights.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_splines.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_toc.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_transforms-inl.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_transforms.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_xyb.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\entropy_coder.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\epf.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\fake_parallel_runner_testonly.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\fields.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\field_encodings.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\frame_dimensions.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\frame_header.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\fuzztest.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\headers.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\huffman_table.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\icc_codec.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\icc_codec_common.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\image.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\image_bundle.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\image_metadata.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\image_ops.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\inverse_mtf-inl.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\lehmer_code.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\loop_filter.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\luminance.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\memory_manager_internal.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\noise.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\opsin_params.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\pack_signed.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\padded_bytes.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\passes_state.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\patch_dictionary_internal.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\quantizer-inl.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\quantizer.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\quant_weights.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\simd_util-inl.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\simd_util.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\splines.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\testing.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\toc.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\transpose-inl.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\xorshift128plus-inl.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\arch_macros.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\bits.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\byte_order.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\common.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\compiler_specific.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\c_callback_support.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\data_parallel.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\exif.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\fast_math-inl.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\float.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\iaca.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\include_jpeglib.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\matrix_ops.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\os_macros.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\override.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\printf_macros.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\random.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\rational_polynomial-inl.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\rect.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\sanitizers.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\sanitizer_definitions.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\scope_guard.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\span.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\status.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\butteraugli\butteraugli.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\color_encoding_cms.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\jxl_cms_internal.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\opsin_params.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\tone_mapping-inl.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\tone_mapping.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\transfer_functions-inl.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\transfer_functions.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\dec_jpeg_data.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\dec_jpeg_data_writer.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\dec_jpeg_output_chunk.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\dec_jpeg_serialization_state.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\enc_jpeg_data.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\enc_jpeg_data_reader.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\enc_jpeg_huffman_decode.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\jpeg_data.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\modular_image.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\options.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\context_predict.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\dec_ma.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\encoding.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\enc_debug_tree.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\enc_encoding.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\enc_ma.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\ma_common.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_palette.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_rct.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_squeeze.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_transform.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\palette.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\rct.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\squeeze.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\transform.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\low_memory_render_pipeline.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\render_pipeline.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\render_pipeline_stage.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\simple_render_pipeline.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_blending.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_chroma_upsampling.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_cms.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_epf.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_from_linear.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_gaborish.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_noise.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_patches.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_splines.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_spot.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_tone_mapping.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_to_linear.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_upsampling.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_write.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_xyb.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_ycbcr.h" />
+    <ClInclude Include="..\..\Dependencies\jpeg-xl\lib\threads\thread_parallel_runner_internal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Dependencies\jpeg-xl\.ImageMagick\ImageMagick.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CORE_brotli\CORE_brotli.vcxproj">
+      <Project>{A9E76CE7-CCB2-DB27-A9E7-6CE7CCB2DB27}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_highway\CORE_highway.vcxproj">
+      <Project>{A297BBD9-7039-6566-A297-BBD970396566}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_lcms\CORE_lcms.vcxproj">
+      <Project>{9363E6E9-F2E6-9202-9363-E6E9F2E69202}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\ImageMagick\filters\analyze.c">
+      <Filter>filters</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="filters">
+      <UniqueIdentifier>{B54F4EA3-B9AE-33AA-B54F-4EA3B9AE33AA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

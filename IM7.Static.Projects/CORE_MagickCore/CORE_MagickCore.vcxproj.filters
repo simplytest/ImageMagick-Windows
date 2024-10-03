@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\accelerate.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\animate.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\annotate.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\artifact.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\attribute.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\blob.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\cache-view.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\cache.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\channel.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\cipher.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\client.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\coder.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\color.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\colormap.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\colorspace.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\compare.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\composite.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\compress.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\configure.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\constitute.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\decorate.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\delegate.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\deprecate.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\display.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\distort.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\distribute-cache.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\draw.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\effect.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\enhance.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\exception.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\feature.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\fourier.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\fx.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\gem.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\geometry.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\histogram.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\identify.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\image-view.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\image.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\layer.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\linked-list.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\list.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\locale.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\log.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\magic.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\magick.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\matrix.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\memory.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\mime.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\module.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\monitor.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\montage.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\morphology.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\nt-base.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\nt-feature.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\opencl.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\option.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\paint.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\pixel.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\policy.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\prepress.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\profile.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\property.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\quantize.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\quantum-export.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\quantum-import.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\quantum.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\random.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\registry.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\resample.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\resize.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\resource.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\segment.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\semaphore.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\shear.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\signature.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\splay-tree.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\static.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\statistic.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\stream.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\string.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\thread.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\threshold.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\timer.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\token.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\transform.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\type.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\utility.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\version.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\vision.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\visual-effects.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\xml-tree.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\MagickCore\xwindow.c">
+      <Filter>MagickCore</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\accelerate-kernels-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\accelerate-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\animate-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\animate.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\annotate-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\annotate.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\artifact.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\attribute.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\blob-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\blob.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\cache-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\cache-view.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\cache.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\channel.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\cipher.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\client.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\coder-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\coder.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\color-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\color.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\colormap-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\colormap.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\colorspace-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\colorspace.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\compare.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\composite-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\composite.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\compress.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\configure-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\configure.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\constitute-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\constitute.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\decorate.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\delegate-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\delegate.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\deprecate.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\display-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\display.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\distort.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\distribute-cache-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\distribute-cache.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\draw-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\draw.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\effect.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\enhance.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\exception-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\exception.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\feature.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\fourier.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\fx-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\fx.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\gem-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\gem.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\geometry-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\geometry.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\histogram.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\identify.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\image-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\image-view.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\image.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\layer.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\linked-list-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\linked-list.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\list.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\locale-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\locale_.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\log-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\log.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\magic-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\magic.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\magick-baseconfig.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\magick-config.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\magick-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\magick-type.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\magick.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\MagickCore.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\matrix-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\matrix.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\memory-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\memory_.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\method-attribute.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\methods.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\mime-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\mime.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\module-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\module.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\monitor-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\monitor.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\montage.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\morphology-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\morphology.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\mutex.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\nt-base-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\nt-base.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\nt-feature.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\opencl-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\opencl.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\option-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\option.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\paint.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\pixel-accessor.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\pixel-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\pixel.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\policy-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\policy.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\prepress.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\profile-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\profile.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\property.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\quantize.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\quantum-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\quantum.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\random-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\random_.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\registry-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\registry.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\resample-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\resample.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\resize-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\resize.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\resource-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\resource_.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\segment.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\semaphore-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\semaphore.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\shear.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\signature-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\signature.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\splay-tree.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\static.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\statistic-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\statistic.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\stream-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\stream.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\string-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\string_.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\studio.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\thread-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\thread_.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\threshold.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\timer-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\timer.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\token-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\token.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\transform-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\transform.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\type-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\type.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\utility-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\utility.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\version-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\version.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\vision.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\visual-effects.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\widget-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\xml-tree-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\xml-tree.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\xwindow-private.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\MagickCore\xwindow.h">
+      <Filter>MagickCore</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MagickCore">
+      <UniqueIdentifier>{051DFF6F-91A6-E9CC-051D-FF6F91A6E9CC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

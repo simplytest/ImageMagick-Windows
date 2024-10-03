@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_pango</ProjectName>
+    <ProjectGuid>{3D6BEAE3-4025-2D00-3D6B-EAE340252D00}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Artifacts\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CORE_DB_pango_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CORE_RL_pango_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\x64\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\x64\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_DB_pango_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\pango;..\..\Dependencies\pango\pango;..\..\Dependencies\cairo\src;..\..\Dependencies\fribidi\lib;..\..\Dependencies\glib;..\..\Dependencies\glib\glib;..\..\Dependencies\glib\gmodule;..\..\Dependencies\harfbuzz\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;PANGO_COMPILATION;PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;HAVE_CAIRO_WIN32;FRIBIDI_LIB_STATIC;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;usp10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_RL_pango_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\pango;..\..\Dependencies\pango\pango;..\..\Dependencies\cairo\src;..\..\Dependencies\fribidi\lib;..\..\Dependencies\glib;..\..\Dependencies\glib\glib;..\..\Dependencies\glib\gmodule;..\..\Dependencies\harfbuzz\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;PANGO_COMPILATION;PANGO_ENABLE_BACKEND;PANGO_ENABLE_ENGINE;HAVE_CAIRO_WIN32;FRIBIDI_LIB_STATIC;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;usp10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\pango\pango\break-arabic.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\break-indic.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\break-thai.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\break.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\ellipsize.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\fonts.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\glyphstring.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-attributes.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-bidi-type.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-color.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-context.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-coverage.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-emoji.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-engine.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-enum-types.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-fontmap.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-fontset.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-glyph-item.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-gravity.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-item.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-language.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-layout.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-markup.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-matrix.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-renderer.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-script.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-tabs.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pango-utils.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangocairo-context.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangocairo-font.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangocairo-fontmap.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangocairo-render.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangocairo-win32font.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangocairo-win32fontmap.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangofc-shape.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangowin32-fontcache.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangowin32-fontmap.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\pangowin32.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\reorder-items.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pango\pango\shape.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Dependencies\pango\pango\config.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-attributes-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-attributes.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-bidi-type.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-break-table.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-break.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-color-table.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-context.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-coverage-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-coverage.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-direction.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-emoji-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-emoji-table.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-engine.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-enum-types.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-features.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-font-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-font.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-fontmap-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-fontmap.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-fontset-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-fontset.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-glyph-item.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-glyph.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-gravity.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-impl-utils.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-item.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-language-sample-table.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-language.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-layout-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-layout.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-matrix.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-modules.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-ot-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-ot.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-renderer.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-script-lang-table.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-script-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-script.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-tabs.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-types.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-utils-internal.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-utils-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-utils.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango-version-macros.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pango.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangocairo-coretext.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangocairo-fc-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangocairo-fc.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangocairo-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangocairo-win32.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangocairo.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangocoretext-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangofc-font-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangofc-fontmap-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangofc-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangoft2-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangohb-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangowin32-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangowin32.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangoxft-private.h" />
+    <ClInclude Include="..\..\Dependencies\pango\pango\pangoxft.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Dependencies\pango\.ImageMagick\ImageMagick.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CORE_cairo\CORE_cairo.vcxproj">
+      <Project>{C603D509-5C15-8EF1-C603-D5095C158EF1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_fribidi\CORE_fribidi.vcxproj">
+      <Project>{F9197596-3C49-0884-F919-75963C490884}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_glib\CORE_glib.vcxproj">
+      <Project>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_harfbuzz\CORE_harfbuzz.vcxproj">
+      <Project>{8A9E0609-D5EE-EA79-8A9E-0609D5EEEA79}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE_pixman\CORE_pixman.vcxproj">
+      <Project>{D60D8CB3-0D08-28EC-D60D-8CB30D0828EC}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

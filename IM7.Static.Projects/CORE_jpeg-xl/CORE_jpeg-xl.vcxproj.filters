@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\ac_strategy.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\alpha.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\ans_common.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\blending.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\box_content_decoder.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\chroma_from_luma.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\coeff_order.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\color_encoding_internal.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\compressed_dc.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\convolve_separable5.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\convolve_slow.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\convolve_symmetric3.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\convolve_symmetric5.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dct_scales.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\decode.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\decode_to_jpeg.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_ans.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_cache.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_context_map.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_external_image.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_frame.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_group.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_group_border.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_huffman.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_modular.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_noise.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_patch_dictionary.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_transforms_testonly.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_xyb.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\encode.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_ac_strategy.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_adaptive_quantization.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_ans.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_aux_out.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_bit_writer.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_butteraugli_comparator.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_cache.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_chroma_from_luma.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_cluster.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_coeff_order.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_comparator.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_context_map.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_debug_image.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_detect_dots.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_dot_dictionary.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_entropy_coder.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_external_image.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_fast_lossless.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_fields.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_frame.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_gaborish.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_group.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_heuristics.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_huffman.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_huffman_tree.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_icc_codec.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_image_bundle.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_linalg.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_modular.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_noise.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_patch_dictionary.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_photon_noise.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_progressive_split.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_quant_weights.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_splines.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_toc.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_transforms.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_xyb.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\entropy_coder.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\epf.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\fields.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\frame_header.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\headers.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\huffman_table.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\icc_codec.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\icc_codec_common.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\image.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\image_bundle.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\image_metadata.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\image_ops.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\loop_filter.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\luminance.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\memory_manager_internal.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\opsin_params.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\passes_state.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\quantizer.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\quant_weights.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\simd_util.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\splines.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\toc.cc">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\butteraugli\butteraugli.cc">
+      <Filter>jpeg-xl\lib\jxl\butteraugli</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\jxl_cms.cc">
+      <Filter>jpeg-xl\lib\jxl\cms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\dec_jpeg_data.cc">
+      <Filter>jpeg-xl\lib\jxl\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\dec_jpeg_data_writer.cc">
+      <Filter>jpeg-xl\lib\jxl\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\enc_jpeg_data.cc">
+      <Filter>jpeg-xl\lib\jxl\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\enc_jpeg_data_reader.cc">
+      <Filter>jpeg-xl\lib\jxl\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\enc_jpeg_huffman_decode.cc">
+      <Filter>jpeg-xl\lib\jxl\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\jpeg_data.cc">
+      <Filter>jpeg-xl\lib\jxl\jpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\modular_image.cc">
+      <Filter>jpeg-xl\lib\jxl\modular</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\dec_ma.cc">
+      <Filter>jpeg-xl\lib\jxl\modular\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\encoding.cc">
+      <Filter>jpeg-xl\lib\jxl\modular\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\enc_debug_tree.cc">
+      <Filter>jpeg-xl\lib\jxl\modular\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\enc_encoding.cc">
+      <Filter>jpeg-xl\lib\jxl\modular\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\enc_ma.cc">
+      <Filter>jpeg-xl\lib\jxl\modular\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_palette.cc">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_rct.cc">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_squeeze.cc">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_transform.cc">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\palette.cc">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\rct.cc">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\squeeze.cc">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\transform.cc">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\low_memory_render_pipeline.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\render_pipeline.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\simple_render_pipeline.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_blending.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_chroma_upsampling.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_cms.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_epf.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_from_linear.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_gaborish.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_noise.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_patches.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_splines.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_spot.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_tone_mapping.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_to_linear.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_upsampling.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_write.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_xyb.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_ycbcr.cc">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\threads\resizable_parallel_runner.cc">
+      <Filter>jpeg-xl\lib\threads</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\threads\thread_parallel_runner.cc">
+      <Filter>jpeg-xl\lib\threads</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\jpeg-xl\lib\threads\thread_parallel_runner_internal.cc">
+      <Filter>jpeg-xl\lib\threads</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\cms.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\cms_interface.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\codestream_header.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\color_encoding.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\compressed_icc.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\decode.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\decode_cxx.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\encode.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\encode_cxx.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\gain_map.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\jxl_cms_export.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\jxl_export.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\jxl_threads_export.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\memory_manager.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\parallel_runner.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\resizable_parallel_runner.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\resizable_parallel_runner_cxx.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\stats.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\thread_parallel_runner.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\thread_parallel_runner_cxx.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\types.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\include\jxl\version.h">
+      <Filter>jpeg-xl\lib\include\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\ac_context.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\ac_strategy.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\alpha.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\ans_common.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\ans_params.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\blending.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\box_content_decoder.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\chroma_from_luma.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\codec_in_out.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\coeff_order.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\coeff_order_fwd.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\color_encoding_internal.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\common.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\compressed_dc.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\convolve-inl.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\convolve.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dct-inl.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dct_block-inl.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dct_scales.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dct_util.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\decode_to_jpeg.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_ans.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_bit_reader.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_cache.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_context_map.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_external_image.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_frame.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_group.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_group_border.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_huffman.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_modular.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_noise.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_patch_dictionary.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_transforms-inl.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_transforms_testonly.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_xyb-inl.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\dec_xyb.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\encode_internal.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_ac_strategy.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_adaptive_quantization.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_ans.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_ans_params.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_aux_out.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_bit_writer.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_butteraugli_comparator.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_cache.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_chroma_from_luma.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_cluster.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_coeff_order.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_comparator.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_context_map.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_debug_image.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_detect_dots.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_dot_dictionary.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_entropy_coder.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_external_image.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_fast_lossless.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_fields.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_frame.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_gaborish.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_gamma_correct.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_group.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_heuristics.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_huffman.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_huffman_tree.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_icc_codec.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_image_bundle.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_linalg.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_modular.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_noise.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_optimize.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_params.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_patch_dictionary.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_photon_noise.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_progressive_split.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_quant_weights.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_splines.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_toc.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_transforms-inl.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_transforms.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\enc_xyb.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\entropy_coder.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\epf.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\fake_parallel_runner_testonly.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\fields.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\field_encodings.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\frame_dimensions.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\frame_header.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\fuzztest.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\headers.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\huffman_table.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\icc_codec.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\icc_codec_common.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\image.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\image_bundle.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\image_metadata.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\image_ops.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\inverse_mtf-inl.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\lehmer_code.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\loop_filter.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\luminance.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\memory_manager_internal.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\noise.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\opsin_params.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\pack_signed.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\padded_bytes.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\passes_state.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\patch_dictionary_internal.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\quantizer-inl.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\quantizer.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\quant_weights.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\simd_util-inl.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\simd_util.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\splines.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\testing.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\toc.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\transpose-inl.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\xorshift128plus-inl.h">
+      <Filter>jpeg-xl\lib\jxl</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\arch_macros.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\bits.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\byte_order.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\common.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\compiler_specific.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\c_callback_support.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\data_parallel.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\exif.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\fast_math-inl.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\float.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\iaca.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\include_jpeglib.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\matrix_ops.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\os_macros.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\override.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\printf_macros.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\random.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\rational_polynomial-inl.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\rect.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\sanitizers.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\sanitizer_definitions.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\scope_guard.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\span.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\base\status.h">
+      <Filter>jpeg-xl\lib\jxl\base</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\butteraugli\butteraugli.h">
+      <Filter>jpeg-xl\lib\jxl\butteraugli</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\color_encoding_cms.h">
+      <Filter>jpeg-xl\lib\jxl\cms</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\jxl_cms_internal.h">
+      <Filter>jpeg-xl\lib\jxl\cms</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\opsin_params.h">
+      <Filter>jpeg-xl\lib\jxl\cms</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\tone_mapping-inl.h">
+      <Filter>jpeg-xl\lib\jxl\cms</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\tone_mapping.h">
+      <Filter>jpeg-xl\lib\jxl\cms</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\transfer_functions-inl.h">
+      <Filter>jpeg-xl\lib\jxl\cms</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\cms\transfer_functions.h">
+      <Filter>jpeg-xl\lib\jxl\cms</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\dec_jpeg_data.h">
+      <Filter>jpeg-xl\lib\jxl\jpeg</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\dec_jpeg_data_writer.h">
+      <Filter>jpeg-xl\lib\jxl\jpeg</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\dec_jpeg_output_chunk.h">
+      <Filter>jpeg-xl\lib\jxl\jpeg</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\dec_jpeg_serialization_state.h">
+      <Filter>jpeg-xl\lib\jxl\jpeg</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\enc_jpeg_data.h">
+      <Filter>jpeg-xl\lib\jxl\jpeg</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\enc_jpeg_data_reader.h">
+      <Filter>jpeg-xl\lib\jxl\jpeg</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\enc_jpeg_huffman_decode.h">
+      <Filter>jpeg-xl\lib\jxl\jpeg</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\jpeg\jpeg_data.h">
+      <Filter>jpeg-xl\lib\jxl\jpeg</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\modular_image.h">
+      <Filter>jpeg-xl\lib\jxl\modular</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\options.h">
+      <Filter>jpeg-xl\lib\jxl\modular</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\context_predict.h">
+      <Filter>jpeg-xl\lib\jxl\modular\encoding</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\dec_ma.h">
+      <Filter>jpeg-xl\lib\jxl\modular\encoding</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\encoding.h">
+      <Filter>jpeg-xl\lib\jxl\modular\encoding</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\enc_debug_tree.h">
+      <Filter>jpeg-xl\lib\jxl\modular\encoding</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\enc_encoding.h">
+      <Filter>jpeg-xl\lib\jxl\modular\encoding</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\enc_ma.h">
+      <Filter>jpeg-xl\lib\jxl\modular\encoding</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\encoding\ma_common.h">
+      <Filter>jpeg-xl\lib\jxl\modular\encoding</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_palette.h">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_rct.h">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_squeeze.h">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\enc_transform.h">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\palette.h">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\rct.h">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\squeeze.h">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\modular\transform\transform.h">
+      <Filter>jpeg-xl\lib\jxl\modular\transform</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\low_memory_render_pipeline.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\render_pipeline.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\render_pipeline_stage.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\simple_render_pipeline.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_blending.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_chroma_upsampling.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_cms.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_epf.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_from_linear.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_gaborish.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_noise.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_patches.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_splines.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_spot.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_tone_mapping.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_to_linear.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_upsampling.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_write.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_xyb.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\jxl\render_pipeline\stage_ycbcr.h">
+      <Filter>jpeg-xl\lib\jxl\render_pipeline</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\jpeg-xl\lib\threads\thread_parallel_runner_internal.h">
+      <Filter>jpeg-xl\lib\threads</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="jpeg-xl\lib\jxl">
+      <UniqueIdentifier>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg-xl\lib">
+      <UniqueIdentifier>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg-xl">
+      <UniqueIdentifier>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg-xl\lib\jxl\butteraugli">
+      <UniqueIdentifier>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg-xl\lib\jxl\cms">
+      <UniqueIdentifier>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg-xl\lib\jxl\jpeg">
+      <UniqueIdentifier>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg-xl\lib\jxl\modular">
+      <UniqueIdentifier>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg-xl\lib\jxl\modular\encoding">
+      <UniqueIdentifier>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg-xl\lib\jxl\modular\transform">
+      <UniqueIdentifier>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg-xl\lib\jxl\render_pipeline">
+      <UniqueIdentifier>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg-xl\lib\threads">
+      <UniqueIdentifier>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg-xl\lib\include\jxl">
+      <UniqueIdentifier>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg-xl\lib\include">
+      <UniqueIdentifier>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg-xl\lib\jxl\base">
+      <UniqueIdentifier>{6D528038-B2BB-AD68-6D52-8038B2BBAD68}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

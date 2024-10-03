@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\deflate\lib\adler32.c">
+      <Filter>deflate\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\deflate\lib\crc32.c">
+      <Filter>deflate\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\deflate\lib\deflate_compress.c">
+      <Filter>deflate\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\deflate\lib\deflate_decompress.c">
+      <Filter>deflate\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\deflate\lib\gzip_compress.c">
+      <Filter>deflate\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\deflate\lib\gzip_decompress.c">
+      <Filter>deflate\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\deflate\lib\utils.c">
+      <Filter>deflate\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\deflate\lib\zlib_compress.c">
+      <Filter>deflate\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\deflate\lib\zlib_decompress.c">
+      <Filter>deflate\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\deflate\lib\arm\cpu_features.c">
+      <Filter>deflate\lib\arm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\deflate\lib\x86\cpu_features.c">
+      <Filter>deflate\lib\x86</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\bt_matchfinder.h">
+      <Filter>deflate\lib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\cpu_features_common.h">
+      <Filter>deflate\lib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\crc32_multipliers.h">
+      <Filter>deflate\lib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\crc32_tables.h">
+      <Filter>deflate\lib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\decompress_template.h">
+      <Filter>deflate\lib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\deflate_compress.h">
+      <Filter>deflate\lib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\deflate_constants.h">
+      <Filter>deflate\lib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\gzip_constants.h">
+      <Filter>deflate\lib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\hc_matchfinder.h">
+      <Filter>deflate\lib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\ht_matchfinder.h">
+      <Filter>deflate\lib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\lib_common.h">
+      <Filter>deflate\lib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\matchfinder_common.h">
+      <Filter>deflate\lib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\zlib_constants.h">
+      <Filter>deflate\lib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\arm\adler32_impl.h">
+      <Filter>deflate\lib\arm</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\arm\cpu_features.h">
+      <Filter>deflate\lib\arm</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\arm\crc32_impl.h">
+      <Filter>deflate\lib\arm</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\arm\crc32_pmull_helpers.h">
+      <Filter>deflate\lib\arm</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\arm\crc32_pmull_wide.h">
+      <Filter>deflate\lib\arm</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\arm\matchfinder_impl.h">
+      <Filter>deflate\lib\arm</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\x86\adler32_impl.h">
+      <Filter>deflate\lib\x86</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\x86\adler32_template.h">
+      <Filter>deflate\lib\x86</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\x86\cpu_features.h">
+      <Filter>deflate\lib\x86</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\x86\crc32_impl.h">
+      <Filter>deflate\lib\x86</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\x86\crc32_pclmul_template.h">
+      <Filter>deflate\lib\x86</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\x86\decompress_impl.h">
+      <Filter>deflate\lib\x86</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\deflate\lib\x86\matchfinder_impl.h">
+      <Filter>deflate\lib\x86</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="deflate\lib">
+      <UniqueIdentifier>{BC9767BE-BDB1-BD2E-BC97-67BEBDB1BD2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deflate">
+      <UniqueIdentifier>{BC9767BE-BDB1-BD2E-BC97-67BEBDB1BD2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deflate\lib\arm">
+      <UniqueIdentifier>{BC9767BE-BDB1-BD2E-BC97-67BEBDB1BD2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deflate\lib\x86">
+      <UniqueIdentifier>{BC9767BE-BDB1-BD2E-BC97-67BEBDB1BD2E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

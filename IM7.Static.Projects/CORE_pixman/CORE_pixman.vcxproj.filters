@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-access-accessors.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-access.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-arm.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-bits-image.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-combine-float.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-combine32.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-conical-gradient.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-edge-accessors.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-edge.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-fast-path.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-filter.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-general.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-glyph.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-gradient-walker.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-image.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-implementation.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-linear-gradient.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-matrix.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-mips.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-noop.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-ppc.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-radial-gradient.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-region16.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-region32.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-solid-fill.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-sse2.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-ssse3.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-timer.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-trap.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-utils.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman-x86.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\pixman\pixman\pixman.c">
+      <Filter>pixman\pixman</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\Dependencies\pixman\pixman\loongson-mmintrin.h">
+      <Filter>pixman\pixman</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pixman\pixman\pixman-accessor.h">
+      <Filter>pixman\pixman</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pixman\pixman\pixman-arm-asm.h">
+      <Filter>pixman\pixman</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pixman\pixman\pixman-arm-common.h">
+      <Filter>pixman\pixman</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pixman\pixman\pixman-arm-neon-asm.h">
+      <Filter>pixman\pixman</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pixman\pixman\pixman-arm-simd-asm.h">
+      <Filter>pixman\pixman</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pixman\pixman\pixman-arma64-neon-asm.h">
+      <Filter>pixman\pixman</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pixman\pixman\pixman-combine32.h">
+      <Filter>pixman\pixman</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pixman\pixman\pixman-compiler.h">
+      <Filter>pixman\pixman</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pixman\pixman\pixman-edge-imp.h">
+      <Filter>pixman\pixman</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pixman\pixman\pixman-inlines.h">
+      <Filter>pixman\pixman</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pixman\pixman\pixman-mips-dspr2-asm.h">
+      <Filter>pixman\pixman</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pixman\pixman\pixman-private.h">
+      <Filter>pixman\pixman</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pixman\pixman\pixman-version.h">
+      <Filter>pixman\pixman</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\pixman\pixman\pixman.h">
+      <Filter>pixman\pixman</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="pixman\pixman">
+      <UniqueIdentifier>{D60D8CB3-0D08-28EC-D60D-8CB30D0828EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pixman">
+      <UniqueIdentifier>{D60D8CB3-0D08-28EC-D60D-8CB30D0828EC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

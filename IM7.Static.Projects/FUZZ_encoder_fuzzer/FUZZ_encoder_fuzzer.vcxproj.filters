@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\ImageMagick\oss-fuzz\encoder_fuzzer.cc">
+      <Filter>oss-fuzz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\oss-fuzz\main.cc">
+      <Filter>oss-fuzz</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="oss-fuzz">
+      <UniqueIdentifier>{7E9FD245-39D5-69CE-7E9F-D24539D569CE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

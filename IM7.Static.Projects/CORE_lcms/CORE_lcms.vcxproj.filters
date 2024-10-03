@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmsalpha.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmscam02.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmscgats.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmscnvrt.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmserr.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmsgamma.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmsgmt.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmshalf.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmsintrp.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmsio0.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmsio1.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmslut.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmsmd5.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmsmtrx.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmsnamed.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmsopt.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmspack.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmspcs.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmsplugin.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmsps2.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmssamp.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmssm.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmstypes.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmsvirt.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmswtpnt.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lcms\src\cmsxform.c">
+      <Filter>lcms\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\Dependencies\lcms\include\lcms2.h">
+      <Filter>lcms\include</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lcms\include\lcms2_plugin.h">
+      <Filter>lcms\include</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\Dependencies\lcms\src\lcms2_internal.h">
+      <Filter>lcms\src</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="lcms\src">
+      <UniqueIdentifier>{9363E6E9-F2E6-9202-9363-E6E9F2E69202}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lcms">
+      <UniqueIdentifier>{9363E6E9-F2E6-9202-9363-E6E9F2E69202}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lcms\include">
+      <UniqueIdentifier>{9363E6E9-F2E6-9202-9363-E6E9F2E69202}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

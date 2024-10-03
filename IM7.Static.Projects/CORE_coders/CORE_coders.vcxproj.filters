@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\ImageMagick\coders\aai.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\art.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ashlar.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\avs.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\bayer.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\bgr.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\bmp.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\braille.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\cals.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\caption.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\cin.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\cip.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\clip.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\clipboard.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\cmyk.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\cube.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\cut.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dcm.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dds.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\debug.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dib.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\djvu.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dmr.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dng.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dot.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dps.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\dpx.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\emf.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ept.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\exr.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\farbfeld.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\fax.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\fits.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\fl32.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\flif.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\fpx.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ftxt.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\gif.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\gradient.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\gray.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\hald.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\hdr.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\heic.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\histogram.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\hrz.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\html.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\icon.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\info.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\inline.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ipl.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\jbig.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\jnx.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\jp2.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\jpeg.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\json.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\jxl.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\kernel.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\label.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mac.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\magick.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\map.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mask.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mat.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\matte.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\meta.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\miff.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mono.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mpc.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mpr.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\msl.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mtv.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\mvg.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\null.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ora.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\otb.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\palm.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pango.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pattern.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pcd.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pcl.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pcx.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pdb.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pdf.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pes.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pgx.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pict.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pix.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\plasma.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\png.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pnm.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ps.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ps2.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ps3.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\psd.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\pwp.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\qoi.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\raw.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\rgb.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\rgf.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\rla.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\rle.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\scr.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\screenshot.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\sct.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\sfw.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\sgi.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\sixel.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\stegano.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\strimg.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\sun.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\svg.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\tga.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\thumbnail.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\tiff.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\tile.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\tim.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\tim2.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ttf.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\txt.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\uhdr.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\uil.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\url.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\uyvy.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\vicar.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\vid.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\video.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\viff.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\vips.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\wbmp.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\webp.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\wpg.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\xbm.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\xc.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\xcf.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\xpm.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\xps.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\yaml.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\ycbcr.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\coders\yuv.c">
+      <Filter>coders</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\ImageMagick\coders\aai.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\art.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\ashlar.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\avs.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\bayer.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\bgr.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\bmp.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\braille.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\bytebuffer-private.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\cals.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\caption.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\cin.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\cip.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\clip.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\clipboard.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\cmyk.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\coders-list.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\coders-private.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\coders.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\cube.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\cut.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\dcm.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\dds.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\debug.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\dib.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\djvu.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\dmr.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\dng.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\dot.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\dps.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\dpx.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\emf.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\ept.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\exr.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\farbfeld.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\fax.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\fits.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\fl32.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\flif.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\fpx.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\ftxt.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\ghostscript-private.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\gif.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\gradient.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\gray.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\hald.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\hdr.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\heic.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\histogram.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\hrz.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\html.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\icon.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\info.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\inline.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\ipl.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\jbig.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\jnx.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\jp2.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\jpeg.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\json.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\jxl.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\kernel.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\label.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\mac.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\magick.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\map.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\mask.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\mat.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\matte.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\meta.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\miff.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\mono.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\mpc.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\mpr.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\msl.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\mtv.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\mvg.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\null.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\ora.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\otb.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\palm.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\pango.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\pattern.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\pcd.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\pcl.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\pcx.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\pdb.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\pdf.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\pes.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\pgx.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\pict.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\pix.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\plasma.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\png.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\pnm.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\ps.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\ps2.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\ps3.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\psd-private.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\psd.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\pwp.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\qoi.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\raw.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\rgb.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\rgf.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\rla.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\rle.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\scr.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\screenshot.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\sct.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\sfw.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\sgi.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\sixel.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\stegano.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\strimg.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\sun.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\svg.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\tga.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\thumbnail.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\tiff.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\tile.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\tim.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\tim2.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\ttf.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\txt.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\uhdr.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\uil.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\url.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\uyvy.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\vicar.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\vid.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\video.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\viff.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\vips.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\wbmp.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\webp.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\wpg.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\xbm.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\xc.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\xcf.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\xpm.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\xps.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\yaml.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\ycbcr.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\coders\yuv.h">
+      <Filter>coders</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="coders">
+      <UniqueIdentifier>{EE2787B2-B0E9-8501-EE27-87B2B0E98501}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

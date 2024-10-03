@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>CORE_lqr</ProjectName>
+    <ProjectGuid>{8B986BD5-93D6-D092-8B98-6BD593D6D092}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\Artifacts\lib\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CORE_DB_lqr_</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CORE_RL_lqr_</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\x64\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\x64\</IntDir>
+    <UseDebugLibraries Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_DB_lqr_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\lqr;..\..\Dependencies\glib;..\..\Dependencies\glib\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;LQR_EXPORTS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDatabaseFileName>..\..\Artifacts\bin\CORE_RL_lqr_.pdb</ProgramDatabaseFileName>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>;..\..\Dependencies\lqr;..\..\Dependencies\glib;..\..\Dependencies\glib\glib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;_VISUALC_;NeedFunctionPrototypes;_WIN32_WINNT=0x0601;LQR_EXPORTS;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\Artifacts\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>/MACHINE:X64;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_carver.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_carver_bias.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_carver_list.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_carver_rigmask.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_cursor.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_energy.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_gradient.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_progress.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_rwindow.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_vmap.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="..\..\Dependencies\lqr\lqr\lqr_vmap_list.c">
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_all.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_base.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_bias.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_bias_priv.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_bias_pub.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_list.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_list_priv.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_list_pub.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_macros_priv.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_priv.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_pub.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_rigmask.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_rigmask_priv.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_carver_rigmask_pub.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_cursor.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_cursor_priv.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_cursor_pub.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_energy.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_energy_priv.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_energy_pub.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_gradient.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_gradient_priv.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_gradient_pub.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_progress.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_progress_priv.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_progress_pub.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_rwindow.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_rwindow_priv.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_rwindow_pub.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_vmap.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_vmap_list.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_vmap_list_priv.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_vmap_list_pub.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_vmap_priv.h" />
+    <ClInclude Include="..\..\Dependencies\lqr\lqr\lqr_vmap_pub.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Dependencies\lqr\.ImageMagick\ImageMagick.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CORE_glib\CORE_glib.vcxproj">
+      <Project>{ED94B88B-8A39-823B-ED94-B88B8A39823B}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

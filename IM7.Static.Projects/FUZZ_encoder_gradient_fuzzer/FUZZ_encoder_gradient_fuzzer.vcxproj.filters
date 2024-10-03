@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\ImageMagick\oss-fuzz\encoder_gradient_fuzzer.cc">
+      <Filter>oss-fuzz</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\oss-fuzz\main.cc">
+      <Filter>oss-fuzz</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="oss-fuzz">
+      <UniqueIdentifier>{AA4CD432-7503-1737-AA4C-D43275031737}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\Blob.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\BlobRef.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\CoderInfo.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\Color.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\Drawable.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\Exception.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\Functions.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\Geometry.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\Image.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\ImageRef.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\Montage.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\Options.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\Pixels.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\ResourceLimits.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\SecurityPolicy.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\Statistic.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\STL.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\Thread.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ImageMagick\Magick++\lib\TypeMetric.cpp">
+      <Filter>Magick++\lib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++.h">
+      <Filter>Magick++\lib</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\Blob.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\BlobRef.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\CoderInfo.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\Color.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\Drawable.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\Exception.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\Functions.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\Geometry.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\Image.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\ImageRef.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\Include.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\Montage.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\Options.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\Pixels.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\ResourceLimits.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\SecurityPolicy.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\Statistic.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\STL.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\Thread.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+    <CLInclude Include="..\..\ImageMagick\Magick++\lib\Magick++\TypeMetric.h">
+      <Filter>Magick++\lib\Magick++</Filter>
+    </CLInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Magick++\lib">
+      <UniqueIdentifier>{4E0D7B37-DBD7-6E0D-4E0D-7B37DBD76E0D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Magick++">
+      <UniqueIdentifier>{4E0D7B37-DBD7-6E0D-4E0D-7B37DBD76E0D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Magick++\lib\Magick++">
+      <UniqueIdentifier>{4E0D7B37-DBD7-6E0D-4E0D-7B37DBD76E0D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
